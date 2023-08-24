@@ -33,37 +33,52 @@ const Header = (props) => {
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block">
-                    <div class="search-bar row bg-light p-2 my-2 rounded-4">
-                        <div className="col-md-2">
-                            <a className="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown"
-                                aria-expanded="false">Disease</a>
-                            <ul className="dropdown-menu" aria-labelledby="pages">
-                                <li><a href="about.html" className="dropdown-item">Diabetes</a></li>
-                                <li><a href="shop.html" className="dropdown-item">Uric Acid </a></li>
-                                <li><a href="shop.html" className="dropdown-item">Cholestrol </a></li>
-                                <li><a href="single-product.html" className="dropdown-item">Osteoporosis </a></li>
-                            </ul>
+                <div className="col-md-3 py-0">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Nutrition</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Disease
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                                            <li><a class="dropdown-item" href="#">Diabetes</a></li>
+                                            <li><a class="dropdown-item" href="#">Uric Acid</a></li>
+                                            <li><a class="dropdown-item" href="#">Cholestrol </a></li>
+                                            <li><a class="dropdown-item" href="#">Osteoporosis </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-md-3 d-none d-md-block">
-                            <select class="form-select border-0 bg-transparent">
-                                <option>All Categories</option>
-                                <option>Groceries</option>
-                                <option>Drinks</option>
-                                <option>Chocolates</option>
-                            </select>
-                        </div>
-                        <div className="col-11 col-md-6">
-                            <form id="search-form" className="text-center" action="" method="">
-                                <input type="text" className="form-control border-0 bg-transparent" placeholder="Search for more than 20,000 products" />
-                            </form>
-                        </div>
-                        <div className="col-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" /></svg>
-                        </div>
-                    </div>
+                    </nav>
                 </div>
-                <div className="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
+                <div className="col-md-2 py-2">
+                    <select class="form-select">
+                        <option>All Categories</option>
+                        <option>Groceries</option>
+                        <option>Drinks</option>
+                        <option>Chocolates</option>
+                    </select>
+                </div>
+                <div className="col-md-2 py-2">
+                    <form id="search-form" className="text-center" action="" method="">
+                        <input type="text" className="form-control border-0 bg-transparent" placeholder="Search for more than 20,000 products" />
+                    </form>
+                </div>
+                <div className="col-1 py-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" /></svg>
+                </div>
+                <div className="col py-2">
                     <ul className="d-flex justify-content-end list-unstyled m-0">
                         <li>
                             <a href="#" className="rounded-circle bg-light p-2 mx-1">
@@ -86,14 +101,6 @@ const Header = (props) => {
                             </a>
                         </li>
                     </ul>
-                    <div className="cart text-end d-none d-lg-block dropdown">
-                        <button className="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
-                            <span className="fs-6 text-muted dropdown-toggle">
-                                <i className="fa fa-shopping-bag" data-feather="log-in"></i>
-                            </span>
-                        </button>
-                    </div>
-
                 </div>
             </div>
 
