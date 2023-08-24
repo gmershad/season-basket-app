@@ -1,6 +1,6 @@
 # Season Basket App
 
-Copy right Voillet Lab Pvt. Ltd
+Season Basket App
 
 ## Available Scripts
 
