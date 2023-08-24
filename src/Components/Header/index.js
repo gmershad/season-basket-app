@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setSelectedSeason } from '../../redux/actions/seasonActions';
 import { setSelectedFilters } from '../../redux/actions/filterActions';
 import Filter from "../Filter";
+import { Link } from 'react-router-dom';
 
 const Header = (props) => {
     const selectedSeason = useSelector(state => state.season.selectedSeason);
@@ -43,7 +44,9 @@ const Header = (props) => {
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav">
                                     <li class="nav-item active">
-                                        <a class="nav-link" href="#">Nutrition</a>
+                                        <Link to={`/nutrition`} style={{ textDecoration: 'none' }}>
+                                            <a class="nav-link" href="#">Nutrition</a>
+                                        </Link>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"

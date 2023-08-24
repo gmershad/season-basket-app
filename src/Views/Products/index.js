@@ -35,8 +35,8 @@ class ProductView extends Component {
     }
 
     render() {
-        console.log(this.state.diseaseFilter);
         const { diseaseFilter } = this.state;
+
         return (
             <>
                 <section class="py-1">
