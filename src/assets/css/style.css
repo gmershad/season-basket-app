@@ -944,3 +944,19 @@ h6 {
 .text-bg-secondary {
   background-color: rgb(84, 84, 102) !important;
 }
+
+.bg-secondary {
+  background-color: darkslategrey !important;
+}
+
+.bg-warning {
+  background-color: #f7a422 !important;
+}
+
+.bg-danger {
+  background-color: red;
+}
+
+.bg-dark {
+  background-color: #000;
+}

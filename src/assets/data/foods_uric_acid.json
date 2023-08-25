@@ -1,0 +1,1984 @@
+[
+  {
+    "id": 1,
+    "name": "Strawberry",
+    "icon": "🍓",
+    "type": "Fruits and berries",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 0.5,
+        "guanine": 1.2,
+        "hypoxanthine": 0.5,
+        "xanthine": 0.0,
+        "total": 2.1,
+        "uricAcid": 2.4
+      },
+      {
+        "srcId": 2,
+        "total": 11,
+        "uricAcid": 25
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Banana",
+    "icon": "🍌",
+    "type": "Fruits and berries",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 1.2,
+        "guanine": 1.7,
+        "hypoxanthine": 0.1,
+        "xanthine": 0.0,
+        "total": 3.0,
+        "uricAcid": 3.5
+      },
+      {
+        "srcId": 2,
+        "total": 11,
+        "uricAcid": 25
+      }
+    ]
+  },
+  {
+    "type": "Meat",
+    "icon": "🐄",
+    "name": "Beef Brisket",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 13.5,
+        "guanine": 7.6,
+        "hypoxanthine": 49,
+        "xanthine": 9.1,
+        "total": 79.2,
+        "uricAcid": 95.8
+      }
+    ],
+    "id": 3
+  },
+  {
+    "type": "Meat",
+    "icon": "🐄",
+    "name": "Beef Clod",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 18.9,
+        "guanine": 9.1,
+        "hypoxanthine": 65.3,
+        "xanthine": 10.6,
+        "total": 104,
+        "uricAcid": 126.1
+      }
+    ],
+    "id": 4
+  },
+  {
+    "type": "Meat",
+    "icon": "🐄",
+    "name": "Beef Heart",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 45.9,
+        "guanine": 27.2,
+        "hypoxanthine": 96.6,
+        "xanthine": 15.2,
+        "total": 185,
+        "uricAcid": 223.6
+      }
+    ],
+    "id": 5
+  },
+  {
+    "type": "Meat",
+    "icon": "🐄",
+    "name": "Beef Kidney",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 67.6,
+        "guanine": 63.5,
+        "hypoxanthine": 8.2,
+        "xanthine": 35,
+        "total": 174.2,
+        "uricAcid": 203.4
+      }
+    ],
+    "id": 6
+  },
+  {
+    "type": "Meat",
+    "icon": "🐄",
+    "name": "Beef Large intestine",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 27.1,
+        "guanine": 38.6,
+        "hypoxanthine": 15.2,
+        "xanthine": 7.3,
+        "total": 88,
+        "uricAcid": 103.3
+      }
+    ],
+    "id": 7
+  },
+  {
+    "type": "Meat",
+    "icon": "🐄",
+    "name": "Beef Liver",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 86.5,
+        "guanine": 83.1,
+        "hypoxanthine": null,
+        "xanthine": 50.2,
+        "total": 219.8,
+        "uricAcid": 255.5
+      }
+    ],
+    "id": 8
+  },
+  {
+    "type": "Meat",
+    "icon": "🐄",
+    "name": "Beef Neck",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 18.9,
+        "guanine": 13.6,
+        "hypoxanthine": 54.4,
+        "xanthine": 13.7,
+        "total": 100.6,
+        "uricAcid": 121
+      }
+    ],
+    "id": 9
+  },
+  {
+    "type": "Meat",
+    "icon": "🐄",
+    "name": "Beef Ribloin",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 13.5,
+        "guanine": 7.6,
+        "hypoxanthine": 39.5,
+        "xanthine": 13.7,
+        "total": 74.2,
+        "uricAcid": 89.1
+      }
+    ],
+    "id": 10
+  },
+  {
+    "type": "Meat",
+    "icon": "🐄",
+    "name": "Beef Shin",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 17.6,
+        "guanine": 13.6,
+        "hypoxanthine": 58.5,
+        "xanthine": 16.7,
+        "total": 106.4,
+        "uricAcid": 127.8
+      }
+    ],
+    "id": 11
+  },
+  {
+    "type": "Meat",
+    "icon": "🐄",
+    "name": "Beef Shoulder ribs",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 14.9,
+        "guanine": 9.1,
+        "hypoxanthine": 36.7,
+        "xanthine": 16.7,
+        "total": 77.4,
+        "uricAcid": 92.5
+      }
+    ],
+    "id": 12
+  },
+  {
+    "type": "Meat",
+    "icon": "🐄",
+    "name": "Beef Shoulder sirloin",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 16.2,
+        "guanine": 9.1,
+        "hypoxanthine": 55.8,
+        "xanthine": 9.1,
+        "total": 90.2,
+        "uricAcid": 109.3
+      }
+    ],
+    "id": 13
+  },
+  {
+    "type": "Meat",
+    "icon": "🐄",
+    "name": "Beef Stomach",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 28.4,
+        "guanine": 21.2,
+        "hypoxanthine": 17.7,
+        "xanthine": 16.7,
+        "total": 83.9,
+        "uricAcid": 99.2
+      }
+    ],
+    "id": 14
+  },
+  {
+    "type": "Meat",
+    "icon": "🐄",
+    "name": "Beef Tenderloin",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 16.2,
+        "guanine": 9.1,
+        "hypoxanthine": 64,
+        "xanthine": 9.1,
+        "total": 98.4,
+        "uricAcid": 119.4
+      }
+    ],
+    "id": 15
+  },
+  {
+    "type": "Meat",
+    "icon": "🐄",
+    "name": "Beef Tongue",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 24.3,
+        "guanine": 12.1,
+        "hypoxanthine": 44.9,
+        "xanthine": 9.1,
+        "total": 90.4,
+        "uricAcid": 109.3
+      }
+    ],
+    "id": 16
+  },
+  {
+    "type": "Meat",
+    "icon": "🐄",
+    "name": "Beef Topside",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 18.9,
+        "guanine": 10.6,
+        "hypoxanthine": 72.1,
+        "xanthine": 9.1,
+        "total": 110.8,
+        "uricAcid": 134.5
+      }
+    ],
+    "id": 17
+  },
+  {
+    "type": "Meat",
+    "icon": "🐄",
+    "name": "Beef Topside (raw)",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 20.3,
+        "guanine": 15.1,
+        "hypoxanthine": 77.3,
+        "xanthine": 22.5,
+        "total": 135.2,
+        "uricAcid": 162.4
+      }
+    ],
+    "id": 18
+  },
+  {
+    "type": "Meat",
+    "icon": "🐄",
+    "name": "Beef Topside (heated)",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 27.1,
+        "guanine": 15.8,
+        "hypoxanthine": 87.2,
+        "xanthine": 13.3,
+        "total": 143.5,
+        "uricAcid": 173.8
+      }
+    ],
+    "id": 19
+  },
+  {
+    "type": "Meat",
+    "icon": "🐔",
+    "name": "Chicken Breast",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 20.5,
+        "guanine": 21.4,
+        "hypoxanthine": 98.4,
+        "xanthine": 1,
+        "total": 141.2,
+        "uricAcid": 171.8
+      }
+    ],
+    "id": 45
+  },
+  {
+    "type": "Meat",
+    "icon": "🐔",
+    "name": "Chicken Buttocks",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 17,
+        "guanine": 21.9,
+        "hypoxanthine": 23.2,
+        "xanthine": 6.7,
+        "total": 68.8,
+        "uricAcid": 81.6
+      }
+    ],
+    "id": 46
+  },
+  {
+    "type": "Meat",
+    "icon": "🐔",
+    "name": "Chicken Gizzard",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 45.9,
+        "guanine": 51.4,
+        "hypoxanthine": 39.5,
+        "xanthine": 6.1,
+        "total": 142.9,
+        "uricAcid": 169.8
+      }
+    ],
+    "id": 47
+  },
+  {
+    "type": "Meat",
+    "icon": "🐔",
+    "name": "Chicken Heart",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 31.3,
+        "guanine": 36.1,
+        "hypoxanthine": 52.6,
+        "xanthine": 5.4,
+        "total": 125.4,
+        "uricAcid": 150
+      }
+    ],
+    "id": 48
+  },
+  {
+    "type": "Meat",
+    "icon": "🐔",
+    "name": "Chicken Leg",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 27,
+        "guanine": 19.6,
+        "hypoxanthine": 76.2,
+        "xanthine": 0,
+        "total": 122.9,
+        "uricAcid": 149.6
+      }
+    ],
+    "id": 49
+  },
+  {
+    "type": "Meat",
+    "icon": "🐔",
+    "name": "Chicken Liver",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 121.6,
+        "guanine": 151.1,
+        "hypoxanthine": "",
+        "xanthine": 39.5,
+        "total": 312.2,
+        "uricAcid": 363.1
+      }
+    ],
+    "id": 50
+  },
+  {
+    "type": "Meat",
+    "icon": "🐔",
+    "name": "Chicken Skin",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 48.6,
+        "guanine": 43.8,
+        "hypoxanthine": 27.2,
+        "xanthine": "",
+        "total": 119.7,
+        "uricAcid": 142.9
+      }
+    ],
+    "id": 51
+  },
+  {
+    "type": "Meat",
+    "icon": "🐔",
+    "name": "Chicken White meat",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 27,
+        "guanine": 16.6,
+        "hypoxanthine": 110.2,
+        "xanthine": 0,
+        "total": 153.9,
+        "uricAcid": 188.3
+      }
+    ],
+    "id": 52
+  },
+  {
+    "type": "Meat",
+    "icon": "🐔",
+    "name": "Chicken Wing",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 28.4,
+        "guanine": 16.6,
+        "hypoxanthine": 92.5,
+        "xanthine": 0,
+        "total": 137.5,
+        "uricAcid": 168.1
+      }
+    ],
+    "id": 53
+  },
+  {
+    "type": "Meat",
+    "icon": "🐏",
+    "name": "Mutton",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 17.6,
+        "guanine": 10.6,
+        "hypoxanthine": 68.1,
+        "xanthine": "",
+        "total": 96.2,
+        "uricAcid": 117.7
+      }
+    ],
+    "id": 55
+  },
+  {
+    "type": "Meat",
+    "icon": "🐏",
+    "name": "Mutton Rum",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 17.6,
+        "guanine": 10.6,
+        "hypoxanthine": 65.3,
+        "xanthine": "",
+        "total": 93.5,
+        "uricAcid": 114.3
+      }
+    ],
+    "id": 56
+  },
+  {
+    "type": "Meat",
+    "icon": "🐖",
+    "name": "Pork Heart",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 39.2,
+        "guanine": 24.2,
+        "hypoxanthine": 55.8,
+        "xanthine": 0,
+        "total": 119.2,
+        "uricAcid": 144.6
+      }
+    ],
+    "id": 57
+  },
+  {
+    "type": "Meat",
+    "icon": "🐖",
+    "name": "Pork Kidney",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 64.8,
+        "guanine": 77.1,
+        "hypoxanthine": 53.1,
+        "xanthine": 0,
+        "total": 195,
+        "uricAcid": 232
+      }
+    ],
+    "id": 58
+  },
+  {
+    "type": "Meat",
+    "icon": "🐖",
+    "name": "Pork Liver",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 81.1,
+        "guanine": 102.7,
+        "hypoxanthine": 34,
+        "xanthine": 66.9,
+        "total": 284.8,
+        "uricAcid": 331.2
+      }
+    ],
+    "id": 59
+  },
+  {
+    "type": "Meat",
+    "icon": "🐖",
+    "name": "Pork Neck",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 14.9,
+        "guanine": 12.1,
+        "hypoxanthine": 43.6,
+        "xanthine": 0,
+        "total": 70.5,
+        "uricAcid": 85.7
+      }
+    ],
+    "id": 60
+  },
+  {
+    "type": "Meat",
+    "icon": "🐖",
+    "name": "Pork Ribs",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 13.5,
+        "guanine": 10.6,
+        "hypoxanthine": 51.7,
+        "xanthine": 0,
+        "total": 75.8,
+        "uricAcid": 92.5
+      }
+    ],
+    "id": 61
+  },
+  {
+    "type": "Meat",
+    "icon": "🐖",
+    "name": "Pork Rump",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 20.3,
+        "guanine": 15.1,
+        "hypoxanthine": 77.6,
+        "xanthine": 0,
+        "total": 113,
+        "uricAcid": 137.8
+      }
+    ],
+    "id": 62
+  },
+  {
+    "type": "Meat",
+    "icon": "🐖",
+    "name": "Pork Shoulder",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 16.2,
+        "guanine": 12.1,
+        "hypoxanthine": 53.1,
+        "xanthine": 0,
+        "total": 81.4,
+        "uricAcid": 99.2
+      }
+    ],
+    "id": 63
+  },
+  {
+    "type": "Meat",
+    "icon": "🐖",
+    "name": "Pork Shoulder ribs",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 16.2,
+        "guanine": 10.6,
+        "hypoxanthine": 64,
+        "xanthine": 0,
+        "total": 90.8,
+        "uricAcid": 110.9
+      }
+    ],
+    "id": 64
+  },
+  {
+    "type": "Meat",
+    "icon": "🐖",
+    "name": "Pork Shoulder sirloin",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 18.9,
+        "guanine": 13.6,
+        "hypoxanthine": 62.6,
+        "xanthine": 0,
+        "total": 95.1,
+        "uricAcid": 116
+      }
+    ],
+    "id": 65
+  },
+  {
+    "type": "Meat",
+    "icon": "🐖",
+    "name": "Pork Shoulder knee",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 21.6,
+        "guanine": 16.6,
+        "hypoxanthine": 69.4,
+        "xanthine": 0,
+        "total": 107.6,
+        "uricAcid": 131.1
+      }
+    ],
+    "id": 66
+  },
+  {
+    "type": "Meat",
+    "icon": "🐖",
+    "name": "Pork Sirloin",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 17.6,
+        "guanine": 12.1,
+        "hypoxanthine": 61.2,
+        "xanthine": 0,
+        "total": 90.9,
+        "uricAcid": 110.9
+      }
+    ],
+    "id": 67
+  },
+  {
+    "type": "Meat",
+    "icon": "🐖",
+    "name": "Pork Tenderloin",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 23,
+        "guanine": 15.1,
+        "hypoxanthine": 81.7,
+        "xanthine": 0,
+        "total": 119.7,
+        "uricAcid": 146.2
+      }
+    ],
+    "id": 68
+  },
+  {
+    "type": "Meat",
+    "icon": "🐖",
+    "name": "Pork Tongue",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 24.3,
+        "guanine": 21.2,
+        "hypoxanthine": 58.5,
+        "xanthine": 0,
+        "total": 104,
+        "uricAcid": 126.1
+      }
+    ],
+    "id": 69
+  },
+  {
+    "name": "Asparagus Upper part",
+    "type": "Vegetables",
+    "icon": "🥗",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 20.7,
+        "guanine": 30.5,
+        "hypoxanthine": 3.8,
+        "xanthine": 0.3,
+        "total": 55.3,
+        "uricAcid": 64.7
+      }
+    ],
+    "id": 70
+  },
+  {
+    "name": "Asparagus Lower part",
+    "type": "Vegetables",
+    "icon": "🥗",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 3.6,
+        "guanine": 4.8,
+        "hypoxanthine": 1.7,
+        "xanthine": 0.1,
+        "total": 10.2,
+        "uricAcid": 12
+      }
+    ],
+    "id": 71
+  },
+  {
+    "name": "Avocado",
+    "type": "Vegetables",
+    "icon": "🥑",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 10.6,
+        "guanine": 7.5,
+        "hypoxanthine": 0.3,
+        "xanthine": 0,
+        "total": 18.4,
+        "uricAcid": 21.8
+      }
+    ],
+    "id": 72
+  },
+  {
+    "name": "Balsam pear (goya)",
+    "type": "Vegetables",
+    "icon": "🥗",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 3.5,
+        "guanine": 4.3,
+        "hypoxanthine": 1.1,
+        "xanthine": 1,
+        "total": 9.9,
+        "uricAcid": 11.6
+      }
+    ],
+    "id": 73
+  },
+  {
+    "name": "Bamboo shoot Upper part",
+    "type": "Vegetables",
+    "icon": "🎍",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 24.8,
+        "guanine": 35.2,
+        "hypoxanthine": 2.8,
+        "xanthine": 0.6,
+        "total": 63.3,
+        "uricAcid": 74
+      }
+    ],
+    "id": 74
+  },
+  {
+    "name": "Bamboo shoot Lower part",
+    "type": "Vegetables",
+    "icon": "🎍",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 12.8,
+        "guanine": 17,
+        "hypoxanthine": 0.7,
+        "xanthine": 0.4,
+        "total": 30.8,
+        "uricAcid": 36.1
+      }
+    ],
+    "id": 75
+  },
+  {
+    "name": "Bean sprouts",
+    "type": "Vegetables",
+    "icon": "🥗",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 14.1,
+        "guanine": 14.2,
+        "hypoxanthine": 3.2,
+        "xanthine": 3.5,
+        "total": 35,
+        "uricAcid": 41.2
+      }
+    ],
+    "id": 76
+  },
+  {
+    "name": "Broccoli",
+    "type": "Vegetables",
+    "icon": "🥦",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 25.1,
+        "guanine": 33.9,
+        "hypoxanthine": 5.7,
+        "xanthine": 5.3,
+        "total": 70,
+        "uricAcid": 81.8
+      }
+    ],
+    "id": 77
+  },
+  {
+    "name": "Broccoli sprout",
+    "type": "Vegetables",
+    "icon": "🥦",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 59.5,
+        "guanine": 57.2,
+        "hypoxanthine": 8.1,
+        "xanthine": 4.8,
+        "total": 129.6,
+        "uricAcid": 153
+      }
+    ],
+    "id": 78
+  },
+  {
+    "name": "Cabbage",
+    "type": "Vegetables",
+    "icon": "🥗",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 1.3,
+        "guanine": 1.7,
+        "hypoxanthine": 0.2,
+        "xanthine": 0,
+        "total": 3.2,
+        "uricAcid": 3.8
+      }
+    ],
+    "id": 79
+  },
+  {
+    "name": "Carrot",
+    "type": "Vegetables",
+    "icon": "🥕",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 0.7,
+        "guanine": 1.4,
+        "hypoxanthine": 0,
+        "xanthine": 0,
+        "total": 2.2,
+        "uricAcid": 2.5
+      }
+    ],
+    "id": 80
+  },
+  {
+    "name": "Cauliflower",
+    "type": "Vegetables",
+    "icon": "🥗",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 27,
+        "guanine": 30.2,
+        "hypoxanthine": null,
+        "xanthine": 0,
+        "total": 57.2,
+        "uricAcid": 67.2
+      }
+    ],
+    "id": 81
+  },
+  {
+    "name": "Cherry tomato",
+    "type": "Vegetables",
+    "icon": "🍅",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 1.6,
+        "guanine": 1.5,
+        "hypoxanthine": 0,
+        "xanthine": 0,
+        "total": 3.1,
+        "uricAcid": 3.7
+      }
+    ],
+    "id": 82
+  },
+  {
+    "name": "Chinese cabbage",
+    "type": "Vegetables",
+    "icon": "🥬",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 2.6,
+        "guanine": 2.9,
+        "hypoxanthine": 1.2,
+        "xanthine": 0.3,
+        "total": 7,
+        "uricAcid": 8.2
+      }
+    ],
+    "id": 83
+  },
+  {
+    "name": "Corn",
+    "type": "Vegetables",
+    "icon": "🌽",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 4.7,
+        "guanine": 6.9,
+        "hypoxanthine": 0.1,
+        "xanthine": 0.1,
+        "total": 11.7,
+        "uricAcid": 13.7
+      }
+    ],
+    "id": 84
+  },
+  {
+    "name": "Cucumber",
+    "type": "Vegetables",
+    "icon": "🥒",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 4.2,
+        "guanine": 5,
+        "hypoxanthine": 0.1,
+        "xanthine": 0.1,
+        "total": 9.4,
+        "uricAcid": 11.1
+      }
+    ],
+    "id": 85
+  },
+  {
+    "name": "Eggplant",
+    "type": "Vegetables",
+    "icon": "🍆",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 11,
+        "guanine": 31.6,
+        "hypoxanthine": 6.6,
+        "xanthine": 1.6,
+        "total": 50.7,
+        "uricAcid": 58.7
+      }
+    ],
+    "id": 86
+  },
+  {
+    "name": "Garlic",
+    "type": "Vegetables",
+    "icon": "🧄",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 6,
+        "guanine": 6.9,
+        "hypoxanthine": 3.4,
+        "xanthine": 0.7,
+        "total": 17,
+        "uricAcid": 20.1
+      }
+    ],
+    "id": 87
+  },
+  {
+    "name": "Garlic chives (nira)",
+    "type": "Vegetables",
+    "icon": "🧄",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 9.4,
+        "guanine": 8.5,
+        "hypoxanthine": 1.4,
+        "xanthine": 0.1,
+        "total": 19.4,
+        "uricAcid": 23
+      }
+    ],
+    "id": 88
+  },
+  {
+    "name": "Ginger",
+    "type": "Vegetables",
+    "icon": "🥗",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 0.4,
+        "guanine": 1.4,
+        "hypoxanthine": 0,
+        "xanthine": 0.5,
+        "total": 2.3,
+        "uricAcid": 2.5
+      }
+    ],
+    "id": 89
+  },
+  {
+    "name": "Green pepper",
+    "type": "Vegetables",
+    "icon": "🥗",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 15.9,
+        "guanine": 35.5,
+        "hypoxanthine": 7,
+        "xanthine": 10.7,
+        "total": 69.2,
+        "uricAcid": 79.8
+      }
+    ],
+    "id": 90
+  },
+  {
+    "name": "Gumbo (okura)",
+    "type": "Vegetables",
+    "icon": "🥗",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 17.2,
+        "guanine": 21.3,
+        "hypoxanthine": 0.3,
+        "xanthine": 0.7,
+        "total": 39.5,
+        "uricAcid": 46.3
+      }
+    ],
+    "id": 91
+  },
+  {
+    "name": "Japanese ginger (myoga)",
+    "type": "Vegetables",
+    "icon": "🥗",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 3.1,
+        "guanine": 3.5,
+        "hypoxanthine": 0.7,
+        "xanthine": 0.4,
+        "total": 7.8,
+        "uricAcid": 9.2
+      }
+    ],
+    "id": 92
+  },
+  {
+    "name": "Japanese leek (negi)",
+    "type": "Vegetables",
+    "icon": "🥗",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 12,
+        "guanine": 26.8,
+        "hypoxanthine": 2.6,
+        "xanthine": 0,
+        "total": 41.4,
+        "uricAcid": 48
+      }
+    ],
+    "id": 93
+  },
+  {
+    "name": "Japanese pumpkin",
+    "type": "Vegetables",
+    "icon": "🎃",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 23.2,
+        "guanine": 29.1,
+        "hypoxanthine": 1.9,
+        "xanthine": 2.5,
+        "total": 56.6,
+        "uricAcid": 66.3
+      }
+    ],
+    "id": 94
+  },
+  {
+    "name": "Komatsuna Leaf",
+    "type": "Vegetables",
+    "icon": "🥗",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 4.2,
+        "guanine": 6.3,
+        "hypoxanthine": 0,
+        "xanthine": 0,
+        "total": 10.6,
+        "uricAcid": 12.3
+      }
+    ],
+    "id": 95
+  },
+  {
+    "name": "Komatsuna Young leaf",
+    "type": "Vegetables",
+    "icon": "🥗",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 13,
+        "guanine": 24.7,
+        "hypoxanthine": 0,
+        "xanthine": 1.4,
+        "total": 39,
+        "uricAcid": 45.1
+      }
+    ],
+    "id": 96
+  },
+  {
+    "name": "Onion",
+    "type": "Vegetables",
+    "icon": "🧅",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 1,
+        "guanine": 1.1,
+        "hypoxanthine": 0.1,
+        "xanthine": 0,
+        "total": 2.3,
+        "uricAcid": 2.7
+      }
+    ],
+    "id": 97
+  },
+  {
+    "name": "Parsley",
+    "type": "Vegetables",
+    "icon": "🥗",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 121.5,
+        "guanine": 135.1,
+        "hypoxanthine": 32.3,
+        "xanthine": 0,
+        "total": 288.9,
+        "uricAcid": 341.3
+      }
+    ],
+    "id": 98
+  },
+  {
+    "name": "Perilla leaves (shiso)",
+    "type": "Vegetables",
+    "icon": "🥗",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 19.1,
+        "guanine": 19.1,
+        "hypoxanthine": 3.1,
+        "xanthine": 0.2,
+        "total": 41.4,
+        "uricAcid": 49
+      }
+    ],
+    "id": 99
+  },
+  {
+    "name": "Potato",
+    "type": "Vegetables",
+    "icon": "🥔",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 2.1,
+        "guanine": 4.2,
+        "hypoxanthine": 0.2,
+        "xanthine": 0,
+        "total": 6.5,
+        "uricAcid": 7.5
+      }
+    ],
+    "id": 100
+  },
+  {
+    "name": "Spinach Leaf",
+    "type": "Vegetables",
+    "icon": "🥬",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 29.8,
+        "guanine": 13.8,
+        "hypoxanthine": 0,
+        "xanthine": 7.7,
+        "total": 51.4,
+        "uricAcid": 61
+      }
+    ],
+    "id": 101
+  },
+  {
+    "name": "Spinach Young leaf",
+    "type": "Vegetables",
+    "icon": "🥬",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 83.5,
+        "guanine": 88.3,
+        "hypoxanthine": 0,
+        "xanthine": 0,
+        "total": 171.8,
+        "uricAcid": 202.1
+      }
+    ],
+    "id": 102
+  },
+  {
+    "name": "Sprouts (with bean)",
+    "type": "Vegetables",
+    "icon": "🥗",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 28.1,
+        "guanine": 28.2,
+        "hypoxanthine": 0,
+        "xanthine": 1.1,
+        "total": 57.3,
+        "uricAcid": 67.4
+      }
+    ],
+    "id": 103
+  },
+  {
+    "name": "Sweet potato",
+    "type": "Vegetables",
+    "icon": "🍠",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 6.7,
+        "guanine": 7.3,
+        "hypoxanthine": 2.4,
+        "xanthine": 0.6,
+        "total": 17,
+        "uricAcid": 20.1
+      }
+    ],
+    "id": 104
+  },
+  {
+    "name": "White radish sprouts",
+    "type": "Vegetables",
+    "icon": "🥗",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 33.9,
+        "guanine": 29.4,
+        "hypoxanthine": 6.4,
+        "xanthine": 3.5,
+        "total": 73.2,
+        "uricAcid": 86.6
+      }
+    ],
+    "id": 105
+  },
+  {
+    "name": "Zucchini",
+    "type": "Vegetables",
+    "icon": "🥗",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 5,
+        "guanine": 6.3,
+        "hypoxanthine": 1,
+        "xanthine": 0.8,
+        "total": 13.1,
+        "uricAcid": 15.3
+      }
+    ],
+    "id": 106
+  },
+  {
+    "name": "Arabesque greenling",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 18.9,
+        "guanine": 34,
+        "hypoxanthine": 94.7,
+        "xanthine": 2.4,
+        "total": 150,
+        "uricAcid": 181
+      }
+    ],
+    "id": 107
+  },
+  {
+    "name": "Ayu",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 17.6,
+        "guanine": 25.7,
+        "hypoxanthine": 89.8,
+        "xanthine": 0,
+        "total": 133.1,
+        "uricAcid": 161.4
+      }
+    ],
+    "id": 108
+  },
+  {
+    "name": "Barracuda",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 13.5,
+        "guanine": 24.2,
+        "hypoxanthine": 110.2,
+        "xanthine": null,
+        "total": 147.9,
+        "uricAcid": 179.9
+      }
+    ],
+    "id": 109
+  },
+  {
+    "name": "Bastard halibut",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 17.6,
+        "guanine": 15.1,
+        "hypoxanthine": 100.7,
+        "xanthine": 0,
+        "total": 133.4,
+        "uricAcid": 163.1
+      }
+    ],
+    "id": 110
+  },
+  {
+    "name": "Bonito",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 21.6,
+        "guanine": 19.6,
+        "hypoxanthine": 170.1,
+        "xanthine": 0,
+        "total": 211.4,
+        "uricAcid": 258.9
+      }
+    ],
+    "id": 111
+  },
+  {
+    "name": "Carp",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 16.2,
+        "guanine": 12.1,
+        "hypoxanthine": 74.9,
+        "xanthine": null,
+        "total": 103.2,
+        "uricAcid": 126.1
+      }
+    ],
+    "id": 112
+  },
+  {
+    "name": "Chub mackerel",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 13.5,
+        "guanine": 10.6,
+        "hypoxanthine": 98,
+        "xanthine": 0,
+        "total": 122.1,
+        "uricAcid": 149.6
+      }
+    ],
+    "id": 113
+  },
+  {
+    "name": "Fat greenling",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 20.3,
+        "guanine": 13.6,
+        "hypoxanthine": 95.3,
+        "xanthine": null,
+        "total": 129.1,
+        "uricAcid": 158
+      }
+    ],
+    "id": 114
+  },
+  {
+    "name": "Flying fish",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 13.5,
+        "guanine": 22.7,
+        "hypoxanthine": 118.4,
+        "xanthine": 0,
+        "total": 154.6,
+        "uricAcid": 188.3
+      }
+    ],
+    "id": 115
+  },
+  {
+    "name": "Gnomefish - Meat",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 14.6,
+        "guanine": 15.3,
+        "hypoxanthine": 120.1,
+        "xanthine": 0.8,
+        "total": 150.8,
+        "uricAcid": 184.4
+      }
+    ],
+    "id": 116
+  },
+  {
+    "name": "Gnomefish - Skin",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 9.6,
+        "guanine": 296.7,
+        "hypoxanthine": 73.5,
+        "xanthine": 2.5,
+        "total": 382.3,
+        "uricAcid": 435.5
+      }
+    ],
+    "id": 117
+  },
+  {
+    "name": "Herring",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 13.5,
+        "guanine": 22.7,
+        "hypoxanthine": 103.4,
+        "xanthine": null,
+        "total": 139.6,
+        "uricAcid": 169.8
+      }
+    ],
+    "id": 118
+  },
+  {
+    "name": "Jack mackerel",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 17.6,
+        "guanine": 48.4,
+        "hypoxanthine": 99.4,
+        "xanthine": 0,
+        "total": 165.3,
+        "uricAcid": 198.4
+      }
+    ],
+    "id": 119
+  },
+  {
+    "name": "Japanese amberjack",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 18.9,
+        "guanine": 12.1,
+        "hypoxanthine": 89.8,
+        "xanthine": 0,
+        "total": 120.8,
+        "uricAcid": 147.9
+      }
+    ],
+    "id": 120
+  },
+  {
+    "name": "Japanese eel",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 13.5,
+        "guanine": 24.2,
+        "hypoxanthine": 54.4,
+        "xanthine": null,
+        "total": 92.1,
+        "uricAcid": 110.9
+      }
+    ],
+    "id": 121
+  },
+  {
+    "name": "Japanese seabass",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 13.5,
+        "guanine": 12.1,
+        "hypoxanthine": 93.9,
+        "xanthine": 0,
+        "total": 119.5,
+        "uricAcid": 146.2
+      }
+    ],
+    "id": 122
+  },
+  {
+    "name": "Mebaru",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 13.5,
+        "guanine": 18.1,
+        "hypoxanthine": 92.5,
+        "xanthine": 0,
+        "total": 124.2,
+        "uricAcid": 151.3
+      }
+    ],
+    "id": 123
+  },
+  {
+    "name": "Monkfish - Meat",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 17.5,
+        "guanine": 19.5,
+        "hypoxanthine": 32.6,
+        "xanthine": 0.5,
+        "total": 70,
+        "uricAcid": 84.2
+      }
+    ],
+    "id": 124
+  },
+  {
+    "name": "Monkfish - Liver (raw)",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 38.2,
+        "guanine": 55.6,
+        "hypoxanthine": 6,
+        "xanthine": 4.4,
+        "total": 104.3,
+        "uricAcid": 121.8
+      }
+    ],
+    "id": 125
+  },
+  {
+    "name": "Monkfish - Liver (steamed)",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 158.2,
+        "guanine": 211.4,
+        "hypoxanthine": 26.6,
+        "xanthine": 3.1,
+        "total": 399.2,
+        "uricAcid": 468.2
+      }
+    ],
+    "id": 126
+  },
+  {
+    "name": "Pacific saury",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 14.9,
+        "guanine": 52.9,
+        "hypoxanthine": 87.1,
+        "xanthine": 0,
+        "total": 154.9,
+        "uricAcid": 184.9
+      }
+    ],
+    "id": 127
+  },
+  {
+    "name": "Rainbow trout",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 25.7,
+        "guanine": 55.9,
+        "hypoxanthine": 99.4,
+        "xanthine": null,
+        "total": 180.9,
+        "uricAcid": 216.8
+      }
+    ],
+    "id": 128
+  },
+  {
+    "name": "Red seabream",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 13.5,
+        "guanine": 10.6,
+        "hypoxanthine": 104.8,
+        "xanthine": 0,
+        "total": 128.9,
+        "uricAcid": 158
+      }
+    ],
+    "id": 129
+  },
+  {
+    "name": "Sablefish - Meat",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 27.4,
+        "guanine": 11.9,
+        "hypoxanthine": 83.9,
+        "xanthine": 0.2,
+        "total": 123.3,
+        "uricAcid": 151.1
+      }
+    ],
+    "id": 130
+  },
+  {
+    "name": "Sablefish - Skin",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 12.1,
+        "guanine": 14,
+        "hypoxanthine": 39.2,
+        "xanthine": 1.6,
+        "total": 66.9,
+        "uricAcid": 80.8
+      }
+    ],
+    "id": 131
+  },
+  {
+    "name": "Sailfin sandfish",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 16.2,
+        "guanine": 30.2,
+        "hypoxanthine": 49,
+        "xanthine": 3,
+        "total": 98.5,
+        "uricAcid": 117.7
+      }
+    ],
+    "id": 132
+  },
+  {
+    "name": "Salmon",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 17.6,
+        "guanine": 10.6,
+        "hypoxanthine": 91.2,
+        "xanthine": 0,
+        "total": 119.3,
+        "uricAcid": 146.2
+      }
+    ],
+    "id": 133
+  },
+  {
+    "name": "Sardine",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 17.6,
+        "guanine": 105.8,
+        "hypoxanthine": 87.1,
+        "xanthine": null,
+        "total": 210.4,
+        "uricAcid": 247.1
+      }
+    ],
+    "id": 134
+  },
+  {
+    "name": "Sillaginidae",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 13.5,
+        "guanine": 10.6,
+        "hypoxanthine": 119.8,
+        "xanthine": null,
+        "total": 143.9,
+        "uricAcid": 176.5
+      }
+    ],
+    "id": 135
+  },
+  {
+    "name": "Spanish mackerel",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 12.2,
+        "guanine": 6,
+        "hypoxanthine": 121.1,
+        "xanthine": null,
+        "total": 139.3,
+        "uricAcid": 171.5
+      }
+    ],
+    "id": 136
+  },
+  {
+    "name": "Striped pigfish",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 13.5,
+        "guanine": 10.6,
+        "hypoxanthine": 125.2,
+        "xanthine": null,
+        "total": 149.3,
+        "uricAcid": 183.2
+      }
+    ],
+    "id": 137
+  },
+  {
+    "name": "Tilefish",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 9.5,
+        "guanine": 10.6,
+        "hypoxanthine": 99.4,
+        "xanthine": 0,
+        "total": 119.4,
+        "uricAcid": 146.2
+      }
+    ],
+    "id": 138
+  },
+  {
+    "name": "Tuna",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 17.6,
+        "guanine": 10.6,
+        "hypoxanthine": 129.3,
+        "xanthine": 0,
+        "total": 157.4,
+        "uricAcid": 193.3
+      }
+    ],
+    "id": 139
+  },
+  {
+    "name": "Wakasagi smelt",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 13.5,
+        "guanine": 24.2,
+        "hypoxanthine": 57.2,
+        "xanthine": 0,
+        "total": 94.8,
+        "uricAcid": 114.3
+      }
+    ],
+    "id": 140
+  },
+  {
+    "name": "Weather loach",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 28.4,
+        "guanine": 49.9,
+        "hypoxanthine": 51.7,
+        "xanthine": 6.1,
+        "total": 136,
+        "uricAcid": 161.4
+      }
+    ],
+    "id": 141
+  },
+  {
+    "name": "Yellow striped flounder",
+    "icon": "🐟",
+    "type": "Fresh fish",
+    "purines": [
+      {
+        "srcId": 1,
+        "adenine": 14.9,
+        "guanine": 28.7,
+        "hypoxanthine": 69.4,
+        "xanthine": 0,
+        "total": 113,
+        "uricAcid": 136.2
+      }
+    ],
+    "id": 142
+  }
+]

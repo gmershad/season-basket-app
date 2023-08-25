@@ -55,7 +55,11 @@ const Header = (props) => {
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="productsDropdown">
                                             <li><a class="dropdown-item" href="#">Diabetes</a></li>
-                                            <li><a class="dropdown-item" href="#">Uric Acid</a></li>
+                                            <li>
+                                                <Link to={`/uricacid`} style={{ textDecoration: 'none' }}>
+                                                    <a class="dropdown-item" href="#">Uric Acid</a>
+                                                </Link>
+                                            </li>
                                             <li><a class="dropdown-item" href="#">Cholestrol </a></li>
                                             <li><a class="dropdown-item" href="#">Osteoporosis </a></li>
                                         </ul>
