@@ -69,115 +69,117 @@ class NutritionView extends Component {
             <>
                 <div class="container-fluid">
                     <h5 class="page-title">Nutrition Details</h5>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div className="row">
-                                <div className="col-md-4">
-                                    <select class="form-select" aria-label="Default"
+                    <div className="row">
+                        <div className="col-md-4">
+                            <div className="row mb-3">
+                                <div className="col-md-12">
+                                    <select className="form-select" aria-label="Default"
                                         onChange={this.handleFoodChange} value={this.state.selectedFood}>
-                                        <option selected>+ Add Food</option>
+                                        <option value="">+ Add Food</option>
                                         {foods.map(food => (
                                             <option key={food.name} value={food.name}>{food.name}</option>
                                         ))}
                                     </select>
                                 </div>
                             </div>
-                            {
-                                this.state.selectedFoods.map(item => (
-                                    <div className="row">
-                                        <div className="col-md-3">
-                                            {item.name}
-                                        </div>
-                                        <div className="col-3">
-                                            <input type="number" className="form-control" id="count"
-                                                min={item.serving}
-                                                value={item.serving}
-                                                name={item.name}
-                                                onChange={this.handleInputChange} />
-                                        </div>
-                                        <div className="col" >
-                                            <i class="fa fa-trash-o"
-                                                onClick={() => this.handleRemoveFood(item)}></i>
-                                        </div>
+                            {this.state.selectedFoods.map(item => (
+                                <div className="row mb-2" key={item.name}>
+                                    <div className="col-md-3">
+                                        {item.name}
                                     </div>
-                                ))}
+                                    <div className="col-3">
+                                        <input type="number" className="form-control" id="count"
+                                            min={item.serving}
+                                            value={item.serving}
+                                            name={item.name}
+                                            onChange={this.handleInputChange} />
+                                    </div>
+                                    <div className="col">
+                                        <i className="fa fa-trash-o"
+                                            onClick={() => this.handleRemoveFood(item)}></i>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                         <div className="col-md-8">
-                            <div class="row mb-4">
-                                <div class="col-md-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Calories</h5>
+                            <div className="row mb-4">
+                                <div className="col-md-3">
+                                    <div className="card">
+                                        <div className="card-body">
+                                            <h5 className="card-title">Calories</h5>
                                             {this.state.macroNutrients && this.state.macroNutrients['calories'] ? (
-                                                <p class="card-text">
+                                                <p className="card-text badge text-bg-secondary">
                                                     {this.state.macroNutrients['calories'].amount} {this.state.macroNutrients['calories'].unit}
                                                 </p>
                                             ) : (
-                                                <p class="card-text">No data available</p>
+                                                <p className="card-text">No data available</p>
                                             )}
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Proteins</h5>
+                                <div className="col-md-3">
+                                    <div className="card">
+                                        <div className="card-body">
+                                            <h5 className="card-title">Protiens</h5>
                                             {this.state.macroNutrients && this.state.macroNutrients['proteins'] ? (
-                                                <p class="card-text">
+                                                <p className="card-text card-text badge text-bg-secondary">
                                                     {this.state.macroNutrients['proteins'].amount} {this.state.macroNutrients['proteins'].unit}
                                                 </p>
                                             ) : (
-                                                <p class="card-text">No data available</p>
+                                                <p className="card-text">No data available</p>
                                             )}
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Carbs</h5>
+                                <div className="col-md-3">
+                                    <div className="card">
+                                        <div className="card-body">
+                                            <h5 className="card-title">Carbs</h5>
                                             {this.state.macroNutrients && this.state.macroNutrients['carbs'] ? (
-                                                <p class="card-text">
+                                                <p className="card-text card-text badge text-bg-secondary">
                                                     {this.state.macroNutrients['carbs'].amount} {this.state.macroNutrients['carbs'].unit}
                                                 </p>
                                             ) : (
-                                                <p class="card-text">No data available</p>
+                                                <p className="card-text">No data available</p>
                                             )}
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Fats</h5>
+                                <div className="col-md-3">
+                                    <div className="card">
+                                        <div className="card-body">
+                                            <h5 className="card-title">Fats</h5>
                                             {this.state.macroNutrients && this.state.macroNutrients['fats'] ? (
-                                                <p class="card-text">
+                                                <p className="card-text card-text badge text-bg-secondary">
                                                     {this.state.macroNutrients['fats'].amount} {this.state.macroNutrients['fats'].unit}
                                                 </p>
                                             ) : (
-                                                <p class="card-text">No data available</p>
+                                                <p className="card-text">No data available</p>
                                             )}
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                             <div className="row">
                                 {Object.keys(this.state.microNutrients).map(nutrientName => (
                                     <div className="col-md-2" key={nutrientName}>
-                                        <h5>{nutrientName}</h5>
-                                        <p>{this.state.microNutrients[nutrientName].amount}
-                                            {this.state.microNutrients[nutrientName].unit}
-                                            - {this.state.microNutrients[nutrientName].percentage}%
+                                        <h6>{nutrientName}</h6>
+                                        <p>
+                                            {this.state.microNutrients[nutrientName].amount}
+                                            {this.state.microNutrients[nutrientName].unit} - {this.state.microNutrients[nutrientName].percentage}%
                                             <Progress showInfo={false}
                                                 status={this.state.microNutrients}
                                                 percent={this.state.microNutrients[nutrientName].percentage}
                                                 size="small" />
                                         </p>
+
                                     </div>
                                 ))}
                             </div>
                         </div>
                     </div>
+
                 </div >
             </>
         );

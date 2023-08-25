@@ -940,3 +940,7 @@ h6 {
 .align-middle {
   vertical-align: middle !important;
 }
+
+.text-bg-secondary {
+  background-color: rgb(84, 84, 102) !important;
+}
