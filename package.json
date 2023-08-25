@@ -11,6 +11,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.8.4",
     "aos": "^2.3.4",
     "apexcharts-clevision": "^3.28.3",
     "axios": "^0.27.2",
@@ -25,6 +26,7 @@
     "react-scripts": "5.0.1",
     "redux": "^4.2.1",
     "redux-thunk": "^2.4.2",
+    "rxjs": "^7.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -52,6 +54,8 @@
     ]
   },
   "devDependencies": {
-    "@types/bootstrap": "^5.2.6"
+    "@types/bootstrap": "^5.2.6",
+    "source-map-loader": "^4.0.1",
+    "webpack": "^5.88.2"
   }
 }
