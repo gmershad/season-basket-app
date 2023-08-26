@@ -1,17 +1,19 @@
 import { connect } from "react-redux";
 import ProductView from "./index";
 import { setSelectedSeason } from '../../redux/actions/seasonActions';
-import { setSelectedFilters } from '../../redux/actions/filterActions';
+import { setSelectedFilters, setSearchedItem } from '../../redux/actions/filterActions';
 
 const mapStoreToProps = state => ({
     selectedSeason: state.season.selectedSeason,
-    selectedFilters: state.filter.selectedFilters
+    selectedFilters: state.filter.selectedFilters,
+    searchedItems: state.filter.searchedItems
 });
 
 
 const mapDispatchToProps = dispatch => ({
     setSelectedSeason,
-    setSelectedFilters
+    setSelectedFilters,
+    setSearchedItem
 });
 
 export default connect(mapStoreToProps, mapDispatchToProps)(ProductView);

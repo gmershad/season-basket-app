@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import logo from "../../assets/images/logo.png";
 import data from "../../assets/data/season";
 import { useSelector, useDispatch } from 'react-redux';
 import { setSelectedSeason } from '../../redux/actions/seasonActions';
-import { setSelectedFilters } from '../../redux/actions/filterActions';
+import { setSelectedFilters, setSearchedItem } from '../../redux/actions/filterActions';
 import Filter from "../Filter";
 import { Link } from 'react-router-dom';
 
@@ -12,6 +12,7 @@ const Header = (props) => {
     const selectedSeason = useSelector(state => state.season.selectedSeason);
     const dispatch = useDispatch();
     const [Filters, setFilters] = useState([]);
+    const [searchText, setSearchText] = useState('');
 
     const handleSeasonChange = (event) => {
         const selectedValue = event.target.value;
@@ -21,6 +22,15 @@ const Header = (props) => {
     const handleApplyFilters = (data) => {
         setFilters(data);
         dispatch(setSelectedFilters(data));
+    }
+
+    const handleSearchChange = (event) => {
+        setSearchText(event.target.value);
+    }
+
+    const handleAddClick = () => {
+        dispatch(setSearchedItem(searchText));
+        setSearchText('');
     }
 
     return (
@@ -133,9 +143,13 @@ const Header = (props) => {
                 </div>
 
                 <div class="col-auto d-flex justify-content-center">
-                    <div class="form-outline">
-                        <input type="text" id="form1" class="form-control" placeholder="Search" />
-                    </div>
+                    <input class="form-control" type="text" placeholder="Search"
+                        aria-label="Search"
+                        value={searchText}
+                        onChange={handleSearchChange} />
+                    <button class="btn btn-secondary ms-2" onClick={handleAddClick}>
+                        <i class="fa fa-plus" />
+                    </button>
                 </div>
 
                 <div className="col-auto">

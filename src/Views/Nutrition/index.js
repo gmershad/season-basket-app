@@ -41,7 +41,6 @@ class NutritionView extends Component {
     handleFoodChange = (event) => {
         const selectedFoodName = event.target.value;
         const foodItem = foods.find(f => f.name === selectedFoodName);
-        foodItem.amount = 100;
         this.setState(prevState => ({
             selectedFoodName,
             selectedFoods: [...prevState.selectedFoods,
@@ -54,8 +53,12 @@ class NutritionView extends Component {
     };
 
 
-    handleInputChange = (event) => {
-        console.log(event);
+    handleInputChange = (event, index) => {
+        const { name, value } = event.target;
+        const updatedSelectedFoods = [...this.state.selectedFoods];
+        updatedSelectedFoods[index].amount = value;
+        this.setState({ selectedFoods: updatedSelectedFoods });
+        this.updateNutrients();
     };
 
     handleRemoveFood = (foodToRemove) => {
@@ -82,17 +85,18 @@ class NutritionView extends Component {
                                     </select>
                                 </div>
                             </div>
-                            {this.state.selectedFoods.map(item => (
+                            {this.state.selectedFoods.map((item, index) => (
                                 <div className="row mb-2" key={item.name}>
                                     <div className="col-md-3">
                                         {item.name}
                                     </div>
                                     <div className="col-3">
                                         <input type="number" className="form-control" id="count"
+                                            key={index}
                                             min={item.serving}
-                                            value={item.serving}
+                                            value={item.amount}
                                             name={item.name}
-                                            onChange={this.handleInputChange} />
+                                            onChange={(event) => this.handleInputChange(event, index)} />
                                     </div>
                                     <div className="col">
                                         <i className="fa fa-trash-o"

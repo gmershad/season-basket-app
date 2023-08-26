@@ -7,7 +7,9 @@ class ProductView extends Component {
         super(props);
         this.state = {
             products: data.productData,
-            diseaseFilter: []
+            diseaseFilter: [],
+            searchedItem: [],
+            selectedSeason: -1
         };
     }
 
@@ -18,6 +20,9 @@ class ProductView extends Component {
         if (this.props.selectedFilters !== prevProps.selectedFilters) {
             this.handleFiltersChange();
         }
+        if (this.props.searchedItems !== prevProps.searchedItems) {
+            this.handleSearchedItems();
+        }
     }
 
     handleSelectedSeasonChange() {
@@ -26,12 +31,27 @@ class ProductView extends Component {
             const seasons = dataItem.Seasons[0];
             return Object.values(seasons).includes(selectedSeason);
         });
-        this.setState({ products: filteredData.length === 0 ? data.productData : filteredData });
+        this.setState({
+            products: filteredData.length === 0
+                ? data.productData : filteredData,
+            selectedSeason: selectedSeason
+        });
     }
 
     handleFiltersChange() {
         const filters = this.props.selectedFilters;
         this.setState({ diseaseFilter: filters });
+    }
+
+    handleSearchedItems() {
+        const searchedItem = this.props.searchedItems;
+        const filteredData = data.productData.filter(dataItem => {
+            return Object.values(dataItem).includes(searchedItem);
+        });
+        console.log(filteredData);
+        this.setState(prevState => ({
+            products: [...prevState.products, ...filteredData]
+        }));
     }
 
     render() {
@@ -57,6 +77,18 @@ class ProductView extends Component {
                                                     </a>
                                                 </figure>
                                                 <h3>{productItem.Name}</h3>
+                                                {
+                                                    !productItem.Seasons.some(season => Object.values(season).includes(this.state.selectedSeason)) &&
+                                                    this.state.selectedSeason >= 0 && (
+                                                        <div className="row">
+                                                            <div className="col">
+                                                                <span className="badge bg-danger me-1">
+                                                                    Off Season
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                }
                                                 <div className="row">
                                                     <div className="col">
                                                         {productItem.Health.Good.map((healthItem, idx) => (
