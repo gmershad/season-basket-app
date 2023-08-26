@@ -13,7 +13,6 @@ const Header = (props) => {
     const dispatch = useDispatch();
     const [Filters, setFilters] = useState([]);
 
-
     const handleSeasonChange = (event) => {
         const selectedValue = event.target.value;
         dispatch(setSelectedSeason(selectedValue));
@@ -26,7 +25,7 @@ const Header = (props) => {
 
     return (
         <>
-            <div class="row py-3 border-bottom">
+            <div class="row py-3">
                 <div class="col-sm-4 col-lg-3 text-center text-sm-start">
                     <div class="main-logo">
                         <a href="index.html">
@@ -133,8 +132,14 @@ const Header = (props) => {
                     </select>
                 </div>
 
+                <div class="col-auto d-flex justify-content-center">
+                    <div class="form-outline">
+                        <input type="text" id="form1" class="form-control" placeholder="Search" />
+                    </div>
+                </div>
+
                 <div className="col-auto">
-                    <span class="rounded-pill py-2 pe-2 badge-add-filter"
+                    <span class="rounded-pill badge-add-filter"
                         data-bs-toggle="modal" href="#modalStart"
                         role="button">
                         Select Filter <i class="fa fa-plus ms-1"></i>
