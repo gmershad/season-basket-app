@@ -14,47 +14,78 @@ class ProductDetail extends Component {
     render() {
         return (
             <>
-                <div class="post-meta">
-                    <span class="post-category">Vegetable</span> / <span class="meta-date">Jul 11, 2023</span>
-                </div>
-                <h3 class="page-title">Cauliflower</h3>
-                <main class="post-grid">
-                    <div class="row">
-                        <article class="post-item">
-                            <div class="post-content">
-                                <div class="post-thumbnail mb-5">
-                                    <img src={process.env.PUBLIC_URL + '/images/thumb-avocado.png'} class="tab-image" />
-                                </div>
-                                <div class="post-description padding-medium">
-                                    <p>
-                                        <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur facilisis vivamus massa magna. Blandit mauris libero condimentum commodo morbi consectetur sociis convallis sit. Magna diam amet justo sed vel dolor et volutpat integer. Iaculis sit sapien hac odio elementum egestas neque. Adipiscing purus euismod orci sem amet, et. Turpis erat ornare nisi laoreet est euismod.</strong>
-                                    </p>
-                                    <blockquote>“Sit suscipit tortor turpis sed fringilla lectus facilisis amet. Ipsum, amet dolor curabitur non aliquet orci urna volutpat. Id aliquam neque, ut vivamus sit imperdiet enim, lacus, vel.</blockquote>
-                                    <ul class="inner-list">
-                                        <li>Blandit mauris libero condimentum commodo sociis convallis sit.</li>
-                                        <li>Magna diam amet justo sed vel dolor et volutpat integer.</li>
-                                        <li>Laculis sit sapien hac odio elementum egestas neque.</li>
+                <div className="row">
+                    <div className="col-md-4">
+                        <img src={process.env.PUBLIC_URL + '/images/thumb-avocado.png'} class="tab-image" />
+                    </div>
+                    <div className="col-md-8">
+                        <h3 class="page-title">Avacardo</h3>
+                        <div class="post-description padding-medium">
+                            <p>
+                                <strong>
+                                    Fresh Avacardo, Mukhi, Colocasia, Kochur mukhi, Desi Vegetables, Gemüse. Tukwila-ZaZu Tukwila online Grocery Store Shop, Desi Halal Market in Germany. Its reliable trusted and yours desi online Market.
+                                </strong>
+                            </p>
+                            <h6> Food Values:</h6>
+                            <p>Stolon of Taro(roots), kochur Mukhi contains (in 230 g) Calories: 165, Carbs: 26g, Fat: 6g, Protein: 6g.</p>
+                            <h6>Nutrinoes</h6>
+                            <p> in Kochur mukhi, Stolon of Taro vegetables (in 100 g) are Fiber: 6.7g, Manganese, Vitamin B6, Vitamin E. Potassium, Copper,Vitamin C, Phosphorus, Magnesium.</p>
+                            <h6>Benefits:</h6>
+                            <ul class="inner-list">
+                                <li>Kochur mukhi-Stolon of Taro (roots) vegetables are rich in Fiber and Other Important Nutrients</li>
+                                <li>It helps Control Blood Sugar.</li>
+                                <li>It reduces Your Risk of Heart Disease.</li>
+                                <li>It offers Anticancer Properties.</li>
+                                <li>It helps You Lose Weight.</li>
+                            </ul>
+                            <h6>Category:</h6>
+                            <p>Fruits & Vegetables</p>
+                            <div class="post-tags mt-5">
+                                <div class="block-tag col-md-12">
+                                    <ul class="list-unstyled d-flex">
+                                        <li class="pe-3">
+                                            <a href="#" class="btn btn-success btn-small text-uppercase btn-rounded">Early January</a>
+                                        </li>
+                                        <li class="pe-3">
+                                            <a href="#" class="btn btn-success btn-small text-uppercase btn-rounded">Rich Fibre</a>
+                                        </li>
+                                        <li class="pe-3">
+                                            <a href="#" class="btn btn-success btn-small text-uppercase btn-rounded">Good Skin</a>
+                                        </li>
+                                        <li class="pe-3">
+                                            <a href="#" class="btn btn-danger btn-small text-uppercase btn-rounded">Uric Acid</a>
+                                        </li>
                                     </ul>
-                                    <div class="post-tags mt-5">
-                                        <div class="block-tag col-md-12">
-                                            <ul class="list-unstyled d-flex">
-                                                <li class="pe-3">
-                                                    <a href="#" class="btn btn-warning btn-small text-uppercase btn-rounded">Early January</a>
-                                                </li>
-                                                <li class="pe-3">
-                                                    <a href="#" class="btn btn-warning btn-small text-uppercase btn-rounded">Fibre</a>
-                                                </li>
-                                                <li class="pe-3">
-                                                    <a href="#" class="btn btn-warning btn-small text-uppercase btn-rounded">Uric Acid</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
-                        </article>
+                        </div>
                     </div>
-                </main>
+                </div>
+                <h5>Related</h5>
+                <div className="row">
+                    <div class="card col-md-4">
+                        <img src={process.env.PUBLIC_URL + '/images/thumb-cucumber.png'} class="tab-image" />
+                        <div class="card-body">
+                            <p class="card-text">
+                                Kochur Loti(cleaned-froz.), Stolon of Taro, Arbi, Mukhi 400g</p>
+                        </div>
+                    </div>
+                    <div class="card col-md-4">
+                        <img src={process.env.PUBLIC_URL + '/images/thumb-tomatoes.png'} class="tab-image" />
+                        <div class="card-body">
+                            <p class="card-text">
+                                Kochur Loti(cleaned-froz.), Stolon of Taro, Arbi, Mukhi 400g</p>
+                        </div>
+                    </div>
+                    <div class="card col-md-4">
+                        <img src={process.env.PUBLIC_URL + '/images/thumb-cucumber.png'} class="tab-image" />
+                        <div class="card-body">
+                            <p class="card-text">
+                                Kochur Loti(cleaned-froz.), Stolon of Taro, Arbi, Mukhi 400g</p>
+                        </div>
+                    </div>
+                </div>
+
             </>
         );
     }
