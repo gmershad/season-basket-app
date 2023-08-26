@@ -38,9 +38,11 @@ const Header = (props) => {
             <div class="row py-3">
                 <div class="col-sm-4 col-lg-3 text-center text-sm-start">
                     <div class="main-logo">
-                        <a href="index.html">
-                            <img src={logo} alt="logo" className="img-fluid" />
-                        </a>
+                        <Link to={`/`} >
+                            <a href="">
+                                <img src={logo} alt="logo" className="img-fluid" />
+                            </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="col-md-3 py-0">
@@ -54,7 +56,7 @@ const Header = (props) => {
                                 <ul class="navbar-nav">
                                     <li class="nav-item active">
                                         <Link to={`/nutrition`} style={{ textDecoration: 'none' }}>
-                                            <a class="nav-link" href="#">Nutrition</a>
+                                            <a class="nav-link" href="#">Health & Wellness</a>
                                         </Link>
                                     </li>
                                     <li class="nav-item dropdown">
