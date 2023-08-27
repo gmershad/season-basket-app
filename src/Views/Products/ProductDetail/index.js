@@ -38,6 +38,8 @@ class ProductDetail extends Component {
                                 <li>It offers Anticancer Properties.</li>
                                 <li>It helps You Lose Weight.</li>
                             </ul>
+                            <h6>Allergen Info:</h6>
+                            <p>Free from Does Not Contain Declaration Obligatory Allergens.</p>
                             <h6>Category:</h6>
                             <p>Fruits & Vegetables</p>
                             <div class="post-tags mt-5">

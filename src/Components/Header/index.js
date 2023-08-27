@@ -55,9 +55,22 @@ const Header = (props) => {
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav">
                                     <li class="nav-item active">
-                                        <Link to={`/nutrition`} style={{ textDecoration: 'none' }}>
-                                            <a class="nav-link" href="#">Health & Wellness</a>
-                                        </Link>
+
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Wellness
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                                            <li>
+                                                <Link to={`/nutrition`} style={{ textDecoration: 'none' }}>
+                                                    <a class="dropdown-item" href="#">Nutrition</a>
+                                                </Link>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Cholestrol </a></li>
+                                            <li><a class="dropdown-item" href="#">Osteoporosis </a></li>
+                                        </ul>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
@@ -121,7 +134,7 @@ const Header = (props) => {
                     </ul>
                 </div>
             </div>
-
+            {/* 
             <div className="row py-2">
                 <div className="col-md-2">
                     <select class="form-select" aria-label="Default select example">
@@ -173,7 +186,7 @@ const Header = (props) => {
                     ))}
                 </div>
             </div>
-            <Filter callBack={handleApplyFilters} />
+            <Filter callBack={handleApplyFilters} /> */}
         </>
     );
 };

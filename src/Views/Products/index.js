@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import data from "../../assets/data/products";
+import ProductMenu from "./productMenu";
 
 class ProductView extends Component {
     constructor(props) {
@@ -60,6 +61,7 @@ class ProductView extends Component {
         return (
             <>
                 <section class="py-1">
+                    <ProductMenu />
                     <div class="row">
                         <div class="col-md-12">
                             <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
@@ -69,7 +71,8 @@ class ProductView extends Component {
                                             <a href="#" class="btn-wishlist">
                                                 <i class="fa fa-heart" aria-hidden="true"></i>
                                             </a>
-                                            <Link to={`/product/${productItem.ProductId}`} style={{ textDecoration: 'none' }}>
+                                            <Link to={`/product/${productItem.ProductId}`}
+                                                style={{ textDecoration: 'none' }}>
                                                 <figure>
                                                     <a href="product-single.html" title="Product Title">
                                                         <img src={process.env.PUBLIC_URL + '/' + productItem.ImgUrl}
