@@ -14,7 +14,7 @@ class ProductDetail extends Component {
     render() {
         return (
             <>
-                <div className="row">
+                <div className="row py-5">
                     <div className="col-md-4">
                         <img src={process.env.PUBLIC_URL + '/images/thumb-avocado.png'} class="tab-image" />
                     </div>
@@ -87,7 +87,6 @@ class ProductDetail extends Component {
                         </div>
                     </div>
                 </div>
-
             </>
         );
     }

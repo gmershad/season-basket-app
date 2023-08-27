@@ -53,7 +53,6 @@ const ProductMenu = (props) => {
                         ))}
                     </select>
                 </div>
-
                 <div class="col-auto d-flex justify-content-center">
                     <input class="form-control" type="text" placeholder="Search"
                         aria-label="Search"

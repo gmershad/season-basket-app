@@ -1,0 +1,53 @@
+[
+    {
+        "id": "1",
+        "Condition": "Cardiovascular disease",
+        "Nutrients": "Rich niacin, low cholesterol, low fats, rich fibre, rich Vitamin C, vitamin E and beta-carotene"
+    },
+    {
+        "id": "2",
+        "Condition": "Hypertension",
+        "Nutrients": "Low sodium, fruits, vegetables, and low-fat dairy products"
+    },
+    {
+        "id": "3",
+        "Condition": "Cancer",
+        "Nutrients": "Low calories, low fats, fruits and vegetables"
+    },
+    {
+        "id": "4",
+        "Condition": "Colorectal cancer",
+        "Nutrients": "Rich fibre, fruits and vegetables"
+    },
+    {
+        "id": "5",
+        "Condition": "Prostate cancer",
+        "Nutrients": "Tomatoes, low fats, fruits, vegetables, rich fibre, rich vitamin E and selenium."
+    },
+    {
+        "id": "6",
+        "Condition": "Diabetes mellitus and metabolic disorders",
+        "Nutrients": "Low fats, rich fibre, low carbohydrates"
+    },
+    {
+        "id": "7",
+        "Condition": "Obesity and overweight weight",
+        "Nutrients": "Low calories energy, low fats, fruits and vegetables."
+    },
+    {
+        "id": "8",
+        "Condition": "Underweight or eating disorders such as Anorexia nervosa and bulimia nervosa",
+        "Description": "Eating disorders such as anorexia nervosa and bulimia nervosa are serious health problems reflecting an undue concern with body weight. A BMI lower than 18.5 is considered underweight. Anorexia nervosa is characterized by low body weight, propensity for drastic undereating, intense fear of gaining weight or becoming fat (despite being underweight), and a distorted body image. Consequences of underweight include impaired immunity, anemia, and diminished digestive function. Without intervention, a state of semi-starvation similar to marasmus may occur, requiring hospitalization and even force-feeding to prevent death. In bulimia nervosa recurrent episodes of “binge eating” are followed by a form of purging, such as self-induced vomiting, fasting, excessive exercise, or the use of laxatives, enemas, or diuretics. Treatment usually involves a structured eating plan to increase weight. Intense training among young female athletes, coupled with food energy restriction, often results in amenorrhea (failure to menstruate for at least three consecutive months) and bone loss similar to that at menopause. Calcium supplementation may be required.",
+        "Nutrients": "Normal and rich calories energy, rich calcium"
+    },
+    {
+        "id": "9",
+        "Condition": "Dental carries (Tooth decay)",
+        "Nutrients": "Low sugar and sweet food group, Vitamin C,rich calcium and vitamin D"
+    },
+    {
+        "id": "10",
+        "Condition": "Bowel conditions and dieseases",
+        "Nutrients": "Rich fibre (roughage), water, cereals and cereal products, fruits, low fats"
+    }
+]

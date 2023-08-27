@@ -65,10 +65,14 @@ const Header = (props) => {
                                         <ul class="dropdown-menu" aria-labelledby="productsDropdown">
                                             <li>
                                                 <Link to={`/nutrition`} style={{ textDecoration: 'none' }}>
-                                                    <a class="dropdown-item" href="#">Nutrition</a>
+                                                    <a class="dropdown-item" href="#">Nutrition Calculator</a>
                                                 </Link>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Cholestrol </a></li>
+                                            <li>
+                                                <Link to={`/diseasenutrition`} style={{ textDecoration: 'none' }}>
+                                                    <a class="dropdown-item" href="#">Disease Nutrition</a>
+                                                </Link>
+                                            </li>
                                             <li><a class="dropdown-item" href="#">Osteoporosis </a></li>
                                         </ul>
                                     </li>
@@ -134,59 +138,6 @@ const Header = (props) => {
                     </ul>
                 </div>
             </div>
-            {/* 
-            <div className="row py-2">
-                <div className="col-md-2">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>India</option>
-                    </select>
-                </div>
-                <div className="col-md-2">
-                    <select
-                        className="form-select"
-                        aria-label="Default select example"
-                        value={selectedSeason}
-                        onChange={handleSeasonChange}
-                    >
-                        <option value="" disabled>Choose a Season</option>
-                        {data.seasons.map((season) => (
-                            <option key={season.id} value={season.seasonId}>
-                                {season.name}
-                            </option>
-                        ))}
-                    </select>
-                </div>
-
-                <div class="col-auto d-flex justify-content-center">
-                    <input class="form-control" type="text" placeholder="Search"
-                        aria-label="Search"
-                        value={searchText}
-                        onChange={handleSearchChange} />
-                    <button class="btn btn-secondary ms-2" onClick={handleAddClick}>
-                        <i class="fa fa-plus" />
-                    </button>
-                </div>
-
-                <div className="col-auto">
-                    <span class="rounded-pill badge-add-filter"
-                        data-bs-toggle="modal" href="#modalStart"
-                        role="button">
-                        Select Filter <i class="fa fa-plus ms-1"></i>
-                    </span>
-                </div>
-                <div className="col">
-                    {Filters.map(filter => (
-                        <span className="badge badge-light-light rounded-pill text-dark py-0 fw-normal">
-                            <i className="fa fa-circle me-1 text-danger"></i>
-                            <span className="text-body me-1">{filter.name}</span>
-                            <a href="#" class="text-dark opacity-25 ms-1">
-                                <i className="fa fa-times-circle"></i>
-                            </a>
-                        </span>
-                    ))}
-                </div>
-            </div>
-            <Filter callBack={handleApplyFilters} /> */}
         </>
     );
 };

@@ -49,7 +49,6 @@ class ProductView extends Component {
         const filteredData = data.productData.filter(dataItem => {
             return Object.values(dataItem).includes(searchedItem);
         });
-        console.log(filteredData);
         this.setState(prevState => ({
             products: [...prevState.products, ...filteredData]
         }));
