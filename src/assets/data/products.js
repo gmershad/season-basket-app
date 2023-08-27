@@ -39,7 +39,10 @@ const data = {
                     Bad: {
                         diseaseId: ["D001"]
                     }
-                }
+                },
+                Nutrients: [
+                    10
+                ]
             },
             {
                 ProductId: "P002",
@@ -79,7 +82,9 @@ const data = {
                     Bad: {
                         diseaseId: ["D001", "D002"]
                     }
-                }
+                },
+                Nutrients: [
+                ]
             },
             {
                 ProductId: "P003",
@@ -119,7 +124,8 @@ const data = {
                     Bad: {
                         diseaseId: ["D001", "D002"]
                     }
-                }
+                },
+                Nutrients: []
             },
             {
                 ProductId: "P004",
@@ -159,7 +165,8 @@ const data = {
                     Bad: {
                         diseaseId: ["D002"]
                     }
-                }
+                },
+                Nutrients: []
             },
             {
                 ProductId: "P005",
@@ -199,7 +206,8 @@ const data = {
                     Bad: {
                         diseaseId: ["D001", "D002"]
                     }
-                }
+                },
+                Nutrients: []
             },
             {
                 ProductId: "P006",
@@ -239,7 +247,8 @@ const data = {
                     Bad: {
                         diseaseId: ["D001", "D002"]
                     }
-                }
+                },
+                Nutrients: []
             },
             {
                 ProductId: "P007",
@@ -279,7 +288,8 @@ const data = {
                     Bad: {
                         diseaseId: []
                     }
-                }
+                },
+                Nutrients: []
             },
             {
                 ProductId: "P008",
@@ -319,7 +329,8 @@ const data = {
                     Bad: {
                         diseaseId: ["D001", "D002"]
                     }
-                }
+                },
+                Nutrients: []
             }
         ]
 }
