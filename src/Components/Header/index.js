@@ -74,6 +74,11 @@ const Header = (props) => {
                                                 </Link>
                                             </li>
                                             <li><a class="dropdown-item" href="#">Mental Health </a></li>
+                                            <li>
+                                                <Link to={`/ayurfood`} style={{ textDecoration: 'none' }}>
+                                                    <a class="dropdown-item" href="#">Ayurvedic Food</a>
+                                                </Link>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li class="nav-item dropdown">

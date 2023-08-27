@@ -5,6 +5,7 @@ import ProductDetailContainer from "../Views/Products/ProductDetail/ProductDetai
 import NutritionContainer from "../Views/Nutrition/NutritionContainer";
 import UricAcidContainer from "../Views/Disease/UricAcid/UricAcidContainer";
 import DiseaseNutritionContainer from "../Views/Nutrition/DiseaseNutrition/DiseaseNutritionContainer";
+import AyurvedicFoodContainer from "../Views/Ayurvedic/AyurvedicFoodContainer";
 
 const MainRoutes = [{
     path: '/',
@@ -34,6 +35,10 @@ const MainRoutes = [{
         {
             path: '/uricacid',
             element: <UricAcidContainer />
+        },
+        {
+            path: '/ayurfood',
+            element: <AyurvedicFoodContainer />
         },
     ]
 }];

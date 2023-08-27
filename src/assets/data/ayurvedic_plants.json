@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "name": "Tulsi",
+        "description": "",
+        "usage": [
+            "Cough Syrup",
+            "Expectorants",
+            "Mobilizes mucus in bronchitis & Ashthama",
+            "Cold & Flu",
+            "Sore Throat",
+            "Strenthenig effect on Kidney"
+        ],
+        "ImgUrl": "images/thumb-milk.png"
+    },
+    {
+        "id": "2",
+        "name": "Neem",
+        "description": "",
+        "usage": [
+            "Cough Syrup",
+            "Expectorants",
+            "Mobilizes mucus in bronchitis & Ashthama",
+            "Cold & Flu",
+            "Sore Throat",
+            "Strenthenig effect on Kidney"
+        ],
+        "ImgUrl": "images/thumb-bananas.png"
+    }
+]
