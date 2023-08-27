@@ -1,22 +1,26 @@
 import React, { Component } from "react";
 import diseaseCondition from "../../../assets/data/diseaseCondition.json"
+import Nutrients from "../../../assets/data/nutrients.json";
+
 class DiseaseNutritionView extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            selectedCondition: null
+            selectedCondition: null,
+            nutrientsData: []
         };
     }
 
     handleDiseaseConditionChange = (event) => {
         const selectedValue = event.target.value;
         const data = diseaseCondition.find(item => item.id === selectedValue);
-        this.setState({ selectedCondition: data });
+        const nutrientsData = Nutrients.filter(obj => data.Nutrients.includes(obj.id));
+        this.setState({ selectedCondition: data, nutrientsData: nutrientsData });
     };
 
     render() {
         const selectedCondition = this.state.selectedCondition;
-        const nutrients = selectedCondition && selectedCondition.Nutrients ? selectedCondition.Nutrients.split(',') : [];
+        //const nutrients = selectedCondition && selectedCondition.Nutrients ? selectedCondition.Nutrients.split(',') : [];
 
         return (
             <>
@@ -49,9 +53,18 @@ class DiseaseNutritionView extends Component {
                                     <h6>Nutrients</h6>
                                     <p>
                                         {
-                                            nutrients.map((item, idx) => (
-                                                <span key={idx} className="badge bg-success me-1 
-                                            rounded-pill mt-2"
+                                            this.state.nutrientsData.map((item, idx) => (
+                                                <span key={idx} className="badge bg-success me-1 rounded-pill mt-2"
+                                                    style={{ fontSize: 'medium' }}>
+                                                    {item.name}
+                                                </span>
+                                            ))
+                                        }
+                                    </p>
+                                    <p>
+                                        {
+                                            selectedCondition.OtherNutrients.map((item, idx) => (
+                                                <span key={idx} className="badge bg-success me-1 rounded-pill mt-2"
                                                     style={{ fontSize: 'medium' }}>
                                                     {item}
                                                 </span>

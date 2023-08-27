@@ -1,296 +1,349 @@
 [
-  {
-      "name": "Vitamin A",
-      "rda": 900,
-      "wiki": "https://en.wikipedia.org/wiki/Vitamin_A",
-      "required": true,
-      "type": "Vitamins",
-      "tui": 3000
-  },
-  {
-      "name": "Vitamin B1",
-      "rda": 1200,
-      "wiki": "https://en.wikipedia.org/wiki/Thiamine",
-      "required": true,
-      "type": "Vitamins"
-  },
-  {
-      "name": "Vitamin B2",
-      "rda": 1300,
-      "wiki": "https://en.wikipedia.org/wiki/Riboflavin",
-      "required": true,
-      "type": "Vitamins"
-  },
-  {
-      "name": "Vitamin B3",
-      "rda": 16000,
-      "required": true,
-      "wiki": "https://en.wikipedia.org/wiki/Vitamin_B3_complex",
-      "type": "Vitamins",
-      "tui": 35000
-  },
-  {
-      "name": "Vitamin B5",
-      "rda": 5000,
-      "wiki": "https://en.wikipedia.org/wiki/Pantothenic_acid",
-      "required": true,
-      "type": "Vitamins",
-      "tui": 1200000
-  },
-  {
-      "name": "Vitamin B6",
-      "rda": 1300,
-      "wiki": "https://en.wikipedia.org/wiki/Vitamin_B6",
-      "required": true,
-      "type": "Vitamins",
-      "tui": 100000
-  },
-  {
-      "name": "Vitamin B7",
-      "rda": 30,
-      "wiki": "https://en.wikipedia.org/wiki/Biotin",
-      "required": true,
-      "type": "Vitamins"
-  },
-  {
-      "name": "Vitamin B9",
-      "rda": 400,
-      "wiki": "https://en.wikipedia.org/wiki/Folate",
-      "required": true,
-      "type": "Vitamins",
-      "tui": 1000
-  },
-  {
-      "name": "Vitamin B12",
-      "rda": 2.4,
-      "wiki": "https://en.wikipedia.org/wiki/Vitamin_B12",
-      "required": true,
-      "type": "Vitamins"
-  },
-  {
-      "name": "Vitamin C",
-      "rda": 90000,
-      "wiki": "https://en.wikipedia.org/wiki/Vitamin_C",
-      "required": true,
-      "type": "Vitamins",
-      "tui": 2000000
-  },
-  {
-      "name": "Vitamin E",
-      "rda": 15000,
-      "wiki": "https://en.wikipedia.org/wiki/Vitamin_E",
-      "required": true,
-      "type": "Vitamins",
-      "tui": 1000000
-  },
-  {
-      "name": "Vitamin K",
-      "rda": 120,
-      "wiki": "https://en.wikipedia.org/wiki/Vitamin_K",
-      "required": true,
-      "type": "Vitamins"
-  },
-  {
-      "name": "Choline",
-      "rda": 550000,
-      "wiki": "https://en.wikipedia.org/wiki/Choline",
-      "required": true,
-      "type": "Vitamins",
-      "tui": 3500000
-  },
-  {
-      "name": "Calcium",
-      "rda": 1000000,
-      "wiki": "https://en.wikipedia.org/wiki/Calcium",
-      "required": true,
-      "type": "Minerals",
-      "tui": 2500000
-  },
-  {
-      "name": "Chloride",
-      "rda": 2300000,
-      "wiki": "https://en.wikipedia.org/wiki/Chloride",
-      "required": true,
-      "type": "Minerals",
-      "tui": 15000000
-  },
-  {
-      "name": "Chromium",
-      "rda": 35,
-      "wiki": "https://en.wikipedia.org/wiki/Chromium",
-      "required": true,
-      "type": "Minerals",
-      "tui": 200
-  },
-  {
-      "name": "Copper",
-      "rda": 900,
-      "wiki": "https://en.wikipedia.org/wiki/Copper#Biological_role",
-      "required": true,
-      "type": "Minerals",
-      "tui": 10000
-  },
-  {
-      "name": "Iodine",
-      "rda": 150,
-      "wiki": "https://en.wikipedia.org/wiki/Iodine#Biological_role",
-      "required": true,
-      "type": "Minerals",
-      "tui": 1100
-  },
-  {
-      "name": "Iron",
-      "rda": 8000,
-      "wiki": "https://en.wikipedia.org/wiki/Iron#Biological_and_pathological_role",
-      "required": true,
-      "type": "Minerals",
-      "tui": 45000
-  },
-  {
-      "name": "Magnesium",
-      "rda": 380000,
-      "wiki": "https://en.wikipedia.org/wiki/Magnesium#Biological_roles",
-      "required": true,
-      "type": "Minerals",
-      "tui": 400000
-  },
-  {
-      "name": "Manganese",
-      "rda": 2300,
-      "wiki": "https://en.wikipedia.org/wiki/Manganese#Biological_role",
-      "required": true,
-      "type": "Minerals",
-      "tui": 9000
-  },
-  {
-      "name": "Molybdenum",
-      "rda": 50,
-      "wiki": "https://en.wikipedia.org/wiki/Molybdenum#Biological_role",
-      "required": true,
-      "type": "Minerals",
-      "tui": 2000
-  },
-  {
-      "name": "Phosphorus",
-      "rda": 700000,
-      "wiki": "https://en.wikipedia.org/wiki/Phosphorus#Biological_role",
-      "required": true,
-      "type": "Minerals",
-      "tui": 4000000
-  },
-  {
-      "name": "Potassium",
-      "rda": 4700000,
-      "wiki": "https://en.wikipedia.org/wiki/Potassium#Biological_role",
-      "required": true,
-      "type": "Minerals"
-  },
-  {
-      "name": "Selenium",
-      "rda": 55,
-      "wiki": "https://en.wikipedia.org/wiki/Selenium#Biological_role",
-      "required": true,
-      "type": "Minerals",
-      "tui": 400
-  },
-  {
-      "name": "Sodium",
-      "rda": 1500000,
-      "wiki": "https://en.wikipedia.org/wiki/Sodium#Biological_role",
-      "required": true,
-      "type": "Minerals",
-      "tui": 2300000
-  },
-  {
-      "name": "Zinc",
-      "rda": 8000,
-      "wiki": "https://en.wikipedia.org/wiki/Zinc#Biological_role",
-      "required": true,
-      "type": "Minerals",
-      "tui": 40000
-  },
-  {
-      "name": "Isoleucine",
-      "rda": 1520000,
-      "wiki": "https://en.wikipedia.org/wiki/Isoleucine",
-      "required": true,
-      "type": "Essential Amino Acids",
-      "tui": 10000000
-  },
-  {
-      "name": "Histidine",
-      "rda": 1120000,
-      "wiki": "https://en.wikipedia.org/wiki/Histidine",
-      "required": true,
-      "type": "Essential Amino Acids"
-  },
-  {
-      "name": "Leucine",
-      "rda": 3360000,
-      "wiki": "https://en.wikipedia.org/wiki/Leucine",
-      "required": true,
-      "type": "Essential Amino Acids",
-      "tui": 5000000
-  },
-  {
-      "name": "Lysine",
-      "rda": 3040000,
-      "wiki": "https://en.wikipedia.org/wiki/Lysine",
-      "required": true,
-      "type": "Essential Amino Acids",
-      "tui": 9000000
-  },
-  {
-      "name": "Methionine",
-      "rda": 1520000,
-      "wiki": "https://en.wikipedia.org/wiki/Methionine",
-      "required": true,
-      "type": "Essential Amino Acids"
-  },
-  {
-      "name": "Phenylalanine",
-      "rda": 2640000,
-      "wiki": "https://en.wikipedia.org/wiki/Phenylalanine",
-      "required": true,
-      "type": "Essential Amino Acids",
-      "tui": 4000000
-  },
-  {
-      "name": "Tryptophan",
-      "rda": 400000,
-      "wiki": "https://en.wikipedia.org/wiki/Tryptophan",
-      "required": true,
-      "type": "Essential Amino Acids",
-      "tui": 1000000
-  },
-  {
-      "name": "Threonine",
-      "rda": 1600000,
-      "wiki": "https://en.wikipedia.org/wiki/Threonine",
-      "required": true,
-      "type": "Essential Amino Acids",
-      "tui": 3000000
-  },
-  {
-      "name": "Valine",
-      "rda": 1920000,
-      "wiki": "https://en.wikipedia.org/wiki/Valine",
-      "required": true,
-      "type": "Essential Amino Acids",
-      "tui": 4000000
-  },
-  {
-      "name": "α-Linolenic acid",
-      "rda": 250000,
-      "wiki": "https://en.wikipedia.org/wiki/Alpha-Linolenic_acid",
-      "required": true,
-      "type": "Essential Fatty Acids"
-  },
-  {
-      "name": "Linoleic acid",
-      "rda": 10000000,
-      "wiki": "https://en.wikipedia.org/wiki/Linoleic_acid",
-      "required": true,
-      "type": "Essential Fatty Acids"
-  }
+    {
+        "id": 1,
+        "name": "Vitamin A",
+        "rda": 900,
+        "wiki": "https://en.wikipedia.org/wiki/Vitamin_A",
+        "required": true,
+        "type": "Vitamins",
+        "tui": 3000
+    },
+    {
+        "id": 2,
+        "name": "Vitamin B1",
+        "rda": 1200,
+        "wiki": "https://en.wikipedia.org/wiki/Thiamine",
+        "required": true,
+        "type": "Vitamins"
+    },
+    {
+        "id": 3,
+        "name": "Vitamin B2",
+        "rda": 1300,
+        "wiki": "https://en.wikipedia.org/wiki/Riboflavin",
+        "required": true,
+        "type": "Vitamins"
+    },
+    {
+        "id": 4,
+        "name": "Vitamin B3 (Niacin)",
+        "rda": 16000,
+        "required": true,
+        "wiki": "https://en.wikipedia.org/wiki/Vitamin_B3_complex",
+        "type": "Vitamins",
+        "tui": 35000
+    },
+    {
+        "id": 5,
+        "name": "Vitamin B5",
+        "rda": 5000,
+        "wiki": "https://en.wikipedia.org/wiki/Pantothenic_acid",
+        "required": true,
+        "type": "Vitamins",
+        "tui": 1200000
+    },
+    {
+        "id": 6,
+        "name": "Vitamin B6",
+        "rda": 1300,
+        "wiki": "https://en.wikipedia.org/wiki/Vitamin_B6",
+        "required": true,
+        "type": "Vitamins",
+        "tui": 100000
+    },
+    {
+        "id": 7,
+        "name": "Vitamin B7",
+        "rda": 30,
+        "wiki": "https://en.wikipedia.org/wiki/Biotin",
+        "required": true,
+        "type": "Vitamins"
+    },
+    {
+        "id": 8,
+        "name": "Vitamin B9",
+        "rda": 400,
+        "wiki": "https://en.wikipedia.org/wiki/Folate",
+        "required": true,
+        "type": "Vitamins",
+        "tui": 1000
+    },
+    {
+        "id": 9,
+        "name": "Vitamin B12",
+        "rda": 2.4,
+        "wiki": "https://en.wikipedia.org/wiki/Vitamin_B12",
+        "required": true,
+        "type": "Vitamins"
+    },
+    {
+        "id": 10,
+        "name": "Vitamin C",
+        "rda": 90000,
+        "wiki": "https://en.wikipedia.org/wiki/Vitamin_C",
+        "required": true,
+        "type": "Vitamins",
+        "tui": 2000000
+    },
+    {
+        "id": 11,
+        "name": "Vitamin E",
+        "rda": 15000,
+        "wiki": "https://en.wikipedia.org/wiki/Vitamin_E",
+        "required": true,
+        "type": "Vitamins",
+        "tui": 1000000
+    },
+    {
+        "id": 12,
+        "name": "Vitamin K",
+        "rda": 120,
+        "wiki": "https://en.wikipedia.org/wiki/Vitamin_K",
+        "required": true,
+        "type": "Vitamins"
+    },
+    {
+        "id": 13,
+        "name": "Choline",
+        "rda": 550000,
+        "wiki": "https://en.wikipedia.org/wiki/Choline",
+        "required": true,
+        "type": "Vitamins",
+        "tui": 3500000
+    },
+    {
+        "id": 14,
+        "name": "Calcium",
+        "rda": 1000000,
+        "wiki": "https://en.wikipedia.org/wiki/Calcium",
+        "required": true,
+        "type": "Minerals",
+        "tui": 2500000
+    },
+    {
+        "id": 15,
+        "name": "Chloride",
+        "rda": 2300000,
+        "wiki": "https://en.wikipedia.org/wiki/Chloride",
+        "required": true,
+        "type": "Minerals",
+        "tui": 15000000
+    },
+    {
+        "id": 16,
+        "name": "Chromium",
+        "rda": 35,
+        "wiki": "https://en.wikipedia.org/wiki/Chromium",
+        "required": true,
+        "type": "Minerals",
+        "tui": 200
+    },
+    {
+        "id": 17,
+        "name": "Copper",
+        "rda": 900,
+        "wiki": "https://en.wikipedia.org/wiki/Copper#Biological_role",
+        "required": true,
+        "type": "Minerals",
+        "tui": 10000
+    },
+    {
+        "id": 18,
+        "name": "Iodine",
+        "rda": 150,
+        "wiki": "https://en.wikipedia.org/wiki/Iodine#Biological_role",
+        "required": true,
+        "type": "Minerals",
+        "tui": 1100
+    },
+    {
+        "id": 19,
+        "name": "Iron",
+        "rda": 8000,
+        "wiki": "https://en.wikipedia.org/wiki/Iron#Biological_and_pathological_role",
+        "required": true,
+        "type": "Minerals",
+        "tui": 45000
+    },
+    {
+        "id": 20,
+        "name": "Magnesium",
+        "rda": 380000,
+        "wiki": "https://en.wikipedia.org/wiki/Magnesium#Biological_roles",
+        "required": true,
+        "type": "Minerals",
+        "tui": 400000
+    },
+    {
+        "id": 21,
+        "name": "Manganese",
+        "rda": 2300,
+        "wiki": "https://en.wikipedia.org/wiki/Manganese#Biological_role",
+        "required": true,
+        "type": "Minerals",
+        "tui": 9000
+    },
+    {
+        "id": 22,
+        "name": "Molybdenum",
+        "rda": 50,
+        "wiki": "https://en.wikipedia.org/wiki/Molybdenum#Biological_role",
+        "required": true,
+        "type": "Minerals",
+        "tui": 2000
+    },
+    {
+        "name": "Phosphorus",
+        "rda": 700000,
+        "wiki": "https://en.wikipedia.org/wiki/Phosphorus#Biological_role",
+        "required": true,
+        "type": "Minerals",
+        "tui": 4000000
+    },
+    {
+        "id": 23,
+        "name": "Potassium",
+        "rda": 4700000,
+        "wiki": "https://en.wikipedia.org/wiki/Potassium#Biological_role",
+        "required": true,
+        "type": "Minerals"
+    },
+    {
+        "id": 24,
+        "name": "Selenium",
+        "rda": 55,
+        "wiki": "https://en.wikipedia.org/wiki/Selenium#Biological_role",
+        "required": true,
+        "type": "Minerals",
+        "tui": 400
+    },
+    {
+        "id": 25,
+        "name": "Sodium",
+        "rda": 1500000,
+        "wiki": "https://en.wikipedia.org/wiki/Sodium#Biological_role",
+        "required": true,
+        "type": "Minerals",
+        "tui": 2300000
+    },
+    {
+        "id": 26,
+        "name": "Zinc",
+        "rda": 8000,
+        "wiki": "https://en.wikipedia.org/wiki/Zinc#Biological_role",
+        "required": true,
+        "type": "Minerals",
+        "tui": 40000
+    },
+    {
+        "id": 27,
+        "name": "Isoleucine",
+        "rda": 1520000,
+        "wiki": "https://en.wikipedia.org/wiki/Isoleucine",
+        "required": true,
+        "type": "Essential Amino Acids",
+        "tui": 10000000
+    },
+    {
+        "id": 28,
+        "name": "Histidine",
+        "rda": 1120000,
+        "wiki": "https://en.wikipedia.org/wiki/Histidine",
+        "required": true,
+        "type": "Essential Amino Acids"
+    },
+    {
+        "id": 29,
+        "name": "Leucine",
+        "rda": 3360000,
+        "wiki": "https://en.wikipedia.org/wiki/Leucine",
+        "required": true,
+        "type": "Essential Amino Acids",
+        "tui": 5000000
+    },
+    {
+        "id": 30,
+        "name": "Lysine",
+        "rda": 3040000,
+        "wiki": "https://en.wikipedia.org/wiki/Lysine",
+        "required": true,
+        "type": "Essential Amino Acids",
+        "tui": 9000000
+    },
+    {
+        "id": 31,
+        "name": "Methionine",
+        "rda": 1520000,
+        "wiki": "https://en.wikipedia.org/wiki/Methionine",
+        "required": true,
+        "type": "Essential Amino Acids"
+    },
+    {
+        "id": 32,
+        "name": "Phenylalanine",
+        "rda": 2640000,
+        "wiki": "https://en.wikipedia.org/wiki/Phenylalanine",
+        "required": true,
+        "type": "Essential Amino Acids",
+        "tui": 4000000
+    },
+    {
+        "id": 33,
+        "name": "Tryptophan",
+        "rda": 400000,
+        "wiki": "https://en.wikipedia.org/wiki/Tryptophan",
+        "required": true,
+        "type": "Essential Amino Acids",
+        "tui": 1000000
+    },
+    {
+        "id": 34,
+        "name": "Threonine",
+        "rda": 1600000,
+        "wiki": "https://en.wikipedia.org/wiki/Threonine",
+        "required": true,
+        "type": "Essential Amino Acids",
+        "tui": 3000000
+    },
+    {
+        "id": 35,
+        "name": "Valine",
+        "rda": 1920000,
+        "wiki": "https://en.wikipedia.org/wiki/Valine",
+        "required": true,
+        "type": "Essential Amino Acids",
+        "tui": 4000000
+    },
+    {
+        "id": 36,
+        "name": "α-Linolenic acid",
+        "rda": 250000,
+        "wiki": "https://en.wikipedia.org/wiki/Alpha-Linolenic_acid",
+        "required": true,
+        "type": "Essential Fatty Acids"
+    },
+    {
+        "id": 37,
+        "name": "Linoleic acid",
+        "rda": 10000000,
+        "wiki": "https://en.wikipedia.org/wiki/Linoleic_acid",
+        "required": true,
+        "type": "Essential Fatty Acids"
+    },
+    {
+        "id": 38,
+        "name": "Beta-carotene",
+        "rda": 25000,
+        "wiki": "https://en.wikipedia.org/wiki/%CE%92-Carotene",
+        "required": true,
+        "type": "Organic"
+    },
+    {
+        "id": 39,
+        "name": "Vitamin D",
+        "rda": 600,
+        "wiki": "https://en.wikipedia.org/wiki/Vitamin_D",
+        "required": true,
+        "type": "Vitamin"
+    }
 ]
