@@ -73,7 +73,7 @@ const Header = (props) => {
                                                     <a class="dropdown-item" href="#">Disease Nutrition</a>
                                                 </Link>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Osteoporosis </a></li>
+                                            <li><a class="dropdown-item" href="#">Mental Health </a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item dropdown">
