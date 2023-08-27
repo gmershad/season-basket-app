@@ -111,5 +111,128 @@
             "Fruits",
             "Low Fats"
         ]
+    },
+    {
+        "id": "11",
+        "Condition": "Xephthalmia",
+        "Nutrients": [],
+        "OtherNutrients": [
+            "Vitamin A",
+            "Retinol",
+            "Vitamin B6 (pyridoxine)"
+        ]
+    },
+    {
+        "id": "12",
+        "Condition": "Megaloblastic anemia",
+        "Nutrients": [],
+        "OtherNutrients": [
+            "Vitamin B12 (cyanocobalamine)",
+            "Vitamin B9 (folate)"
+        ]
+    },
+    {
+        "id": "13",
+        "Condition": "Rickets",
+        "Nutrients": [],
+        "OtherNutrients": [
+            "Vitamin D"
+        ]
+    },
+    {
+        "id": "14",
+        "Condition": "Rickets",
+        "Nutrients": [],
+        "OtherNutrients": [
+            "Vitamin D"
+        ]
+    },
+    {
+        "id": "15",
+        "Condition": "Pellagra",
+        "Nutrients": [],
+        "OtherNutrients": [
+            "Vitamin B3 (niacin)"
+        ]
+    },
+    {
+        "id": "16",
+        "Condition": "Berberi",
+        "Nutrients": [],
+        "OtherNutrients": [
+            "Vitamin B1 (thiamin)"
+        ]
+    },
+    {
+        "id": "17",
+        "Condition": "Anemia and cataracts",
+        "Nutrients": [],
+        "OtherNutrients": [
+            "Vitamin B2 (riboflavin)"
+        ]
+    },
+    {
+        "id": "18",
+        "Condition": "Crohnâ€™s disease, cystic fibrosis, and certain rare genetic diseases such as abetalipoproteinemia and ataxia",
+        "Nutrients": [],
+        "OtherNutrients": [
+            "Vitamin E"
+        ]
+    },
+    {
+        "id": "19",
+        "Condition": "Osteoporosis",
+        "Nutrients": [],
+        "OtherNutrients": [
+            "Calcium"
+        ]
+    },
+    {
+        "id": "21",
+        "Condition": "Goitre",
+        "Nutrients": [],
+        "OtherNutrients": [
+            "Iodine"
+        ]
+    },
+    {
+        "id": "22",
+        "Condition": "Hypocalcemia or hypokalemia",
+        "Nutrients": [],
+        "OtherNutrients": [
+            "Magnesium"
+        ]
+    },
+    {
+        "id": "23",
+        "Condition": "Stunted growth",
+        "Nutrients": [],
+        "OtherNutrients": [
+            "Zinc"
+        ]
+    },
+    {
+        "id": "24",
+        "Condition": "Hyponatremia (low blood sodium)",
+        "Nutrients": [],
+        "OtherNutrients": [
+            "Sodium"
+        ]
+    },
+    {
+        "id": "25",
+        "Condition": "Hypokalemia, cardiac arrhythmias",
+        "Nutrients": [],
+        "OtherNutrients": [
+            "Potassium"
+        ]
+    },
+    {
+        "id": "26",
+        "Condition": "Dehydration (water deficiency), gastroenteritis in children",
+        "Nutrients": [],
+        "OtherNutrients": [
+            "Water"
+        ]
     }
 ]
