@@ -56,12 +56,6 @@ class ProductView extends Component {
     }
 
     addToCart = (productItem) => {
-        // this.setState((prevState) => ({
-        //     cartItems: [...prevState.cartItems, productItem]
-        // }), () => {
-        //     this.props.setCartItems([...this.props.cartItems, productItem]);
-        // });
-
         this.props.setCartItems([...this.props.cartItems, productItem]);
     };
 
