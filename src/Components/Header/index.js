@@ -1,14 +1,43 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useSelector } from 'react-redux';
 
 import logo from "../../assets/images/logo.png";
 import { Link } from 'react-router-dom';
+import Notification from "../Notificaiton";
 
 const Header = (props) => {
-    const cartItems = useSelector(state => state.cart.cartItems)
+    const [showNotification, setShowNotification] = useState(false);
+    const cartItems = useSelector(state => state.cart.cartItems);
+    const prevCartSize = usePrevious(cartItems.length);
+    function usePrevious(value) {
+        const ref = useRef();
+        useEffect(() => {
+            ref.current = value;
+        });
+        return ref.current;
+    }
+
+    useEffect(() => {
+        if (cartItems.length > prevCartSize) {
+            setShowNotification(true);
+            setTimeout(() => {
+                setShowNotification(false);
+            }, 2000);
+        }
+    }, [cartItems, prevCartSize]);
+
+    useEffect(() => {
+        const resetNotification = setTimeout(() => {
+            setShowNotification(false);
+        }, 2000);
+
+        return () => clearTimeout(resetNotification);
+    }, [showNotification]);
 
     return (
         <>
+            {showNotification && <Notification message="Item added to cart!" />}
+
             <div class="row py-3">
                 <div class="col-sm-4 col-lg-3 text-center text-sm-start">
                     <div class="main-logo">
