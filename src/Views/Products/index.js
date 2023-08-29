@@ -10,7 +10,8 @@ class ProductView extends Component {
             products: data.productData,
             diseaseFilter: [],
             searchedItem: [],
-            selectedSeason: -1
+            selectedSeason: -1,
+            cartItems: []
         };
     }
 
@@ -54,9 +55,18 @@ class ProductView extends Component {
         }));
     }
 
+    addToCart = (productItem) => {
+        // this.setState((prevState) => ({
+        //     cartItems: [...prevState.cartItems, productItem]
+        // }), () => {
+        //     this.props.setCartItems([...this.props.cartItems, productItem]);
+        // });
+
+        this.props.setCartItems([...this.props.cartItems, productItem]);
+    };
+
     render() {
         const { diseaseFilter } = this.state;
-
         return (
             <>
                 <section class="py-1">
@@ -116,8 +126,9 @@ class ProductView extends Component {
                                                     <span class="input-group-btn"></span>
                                                     <span class="input-group-btn"></span>
                                                 </div>
-                                                <a href="#" class="nav-link">
-                                                    <i class="fa fa-shopping-cart"></i>
+                                                <a href="#" class="nav-link"
+                                                    onClick={() => this.addToCart(productItem)}>
+                                                    <i class="fa fa-shopping-cart" />
                                                 </a>
                                             </div>
                                         </div>
