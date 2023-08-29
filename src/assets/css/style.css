@@ -429,3 +429,18 @@ h6 {
 .form-control-sm:not(textarea) {
   height: 36px;
 }
+
+.cart-item-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

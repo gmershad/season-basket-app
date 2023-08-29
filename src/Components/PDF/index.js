@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
         marginBottom: 10,
         fontWeight: 'bold',
+        color: '#808000'
     },
     item: {
         flexDirection: 'row',
@@ -52,6 +53,7 @@ const PDFView = ({ data }) => {
             <Document>
                 <Page size="A4" style={styles.page}>
                     <Text style={styles.header}>Season Basket</Text>
+                    <Text style={styles.header}>Items</Text>
                     {data.map((item, index) => (
                         <View key={index} style={styles.item}>
                             <Text style={styles.itemName}>{item.Name}</Text>

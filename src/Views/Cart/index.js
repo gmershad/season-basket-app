@@ -24,7 +24,6 @@ class CartView extends Component {
 
     render() {
         this.cartItems = this.props.cartItems;
-        console.log(this.cartItems);
         return (
             <>
                 <div className="card">

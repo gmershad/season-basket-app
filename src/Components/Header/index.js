@@ -1,37 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useSelector } from 'react-redux';
 
 import logo from "../../assets/images/logo.png";
-import data from "../../assets/data/season";
-import { useSelector, useDispatch } from 'react-redux';
-import { setSelectedSeason } from '../../redux/actions/seasonActions';
-import { setSelectedFilters, setSearchedItem } from '../../redux/actions/filterActions';
-import Filter from "../Filter";
 import { Link } from 'react-router-dom';
 
 const Header = (props) => {
-    const selectedSeason = useSelector(state => state.season.selectedSeason);
-    const dispatch = useDispatch();
-    const [Filters, setFilters] = useState([]);
-    const [searchText, setSearchText] = useState('');
-
-    const handleSeasonChange = (event) => {
-        const selectedValue = event.target.value;
-        dispatch(setSelectedSeason(selectedValue));
-    };
-
-    const handleApplyFilters = (data) => {
-        setFilters(data);
-        dispatch(setSelectedFilters(data));
-    }
-
-    const handleSearchChange = (event) => {
-        setSearchText(event.target.value);
-    }
-
-    const handleAddClick = () => {
-        dispatch(setSearchedItem(searchText));
-        setSearchText('');
-    }
+    const cartItems = useSelector(state => state.cart.cartItems)
 
     return (
         <>
@@ -48,14 +22,14 @@ const Header = (props) => {
                 <div className="col-md-3 py-0">
                     <nav class="navbar navbar-expand-lg">
                         <div class="container">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav"
                                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav">
                                     <li class="nav-item active">
-
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
@@ -136,20 +110,29 @@ const Header = (props) => {
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="rounded-circle bg-light p-2 mx-1">
+                            <a href="#" className="rounded-circle bg-light p-2 mx-1"
+                                style={{ position: 'relative' }}>
                                 <Link to={`/cart`} style={{ textDecoration: 'none' }}>
-                                    <i className="fa fa-shopping-bag" data-feather="log-in" />
+                                    <i className="fa fa-shopping-bag" aria-hidden="true">
+                                        {
+                                            cartItems && cartItems.length > 0 && (
+                                                <span className="cart-item-count">{cartItems.length}</span>
+                                            )
+                                        }
+                                    </i>
                                 </Link>
                             </a>
                         </li>
                         <li className="d-lg-none">
-                            <a href="#" className="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                            <a href="#" className="rounded-circle bg-light p-2 mx-1"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                                aria-controls="offcanvasCart">
                                 <i className="fa fa-shopping-bag" data-feather="log-in"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div >
         </>
     );
 };
