@@ -1,0 +1,10 @@
+[
+    {
+        "ProductId": "1",
+        "Name": "Green Potatoes",
+        "toxins": [
+            1
+        ],
+        "ImgUrl": "images/green_potato.png"
+    }
+]

@@ -6,6 +6,8 @@ import NutritionContainer from "../Views/Nutrition/NutritionContainer";
 import UricAcidContainer from "../Views/Disease/UricAcid/UricAcidContainer";
 import DiseaseNutritionContainer from "../Views/Nutrition/DiseaseNutrition/DiseaseNutritionContainer";
 import AyurvedicFoodContainer from "../Views/Ayurvedic/AyurvedicFoodContainer";
+import AntiNutrientsContainer from "../Views/AntiNutrients/AntiNutrientsContainer";
+import CartContainer from "../Views/Cart/CartContainer";
 
 const MainRoutes = [{
     path: '/',
@@ -39,6 +41,14 @@ const MainRoutes = [{
         {
             path: '/ayurfood',
             element: <AyurvedicFoodContainer />
+        },
+        {
+            path: '/toxin',
+            element: <AntiNutrientsContainer />
+        },
+        {
+            path: '/cart',
+            element: <CartContainer />
         },
     ]
 }];

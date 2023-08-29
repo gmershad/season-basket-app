@@ -79,6 +79,11 @@ const Header = (props) => {
                                                     <a class="dropdown-item" href="#">Ayurvedic Food</a>
                                                 </Link>
                                             </li>
+                                            <li>
+                                                <Link to={`/toxin`} style={{ textDecoration: 'none' }}>
+                                                    <a class="dropdown-item" href="#">Toxins & Antinutrients Foods</a>
+                                                </Link>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li class="nav-item dropdown">
@@ -115,7 +120,7 @@ const Header = (props) => {
                         <input type="text" className="form-control border-0 bg-transparent" placeholder="Search for more than 20,000 products" />
                     </form>
                 </div>
-                <div className="col-1 py-2">
+                <div className="col-auto py-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" /></svg>
                 </div>
                 <div className="col py-2">
@@ -130,14 +135,16 @@ const Header = (props) => {
                                 <i className="fa fa-heart" data-feather="log-in"></i>
                             </a>
                         </li>
-                        <li className="d-lg-none">
-                            <a href="#" className="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
-                                <i className="fa fa-shopping-bag" data-feather="log-in"></i>
+                        <li>
+                            <a href="#" className="rounded-circle bg-light p-2 mx-1">
+                                <Link to={`/cart`} style={{ textDecoration: 'none' }}>
+                                    <i className="fa fa-shopping-bag" data-feather="log-in" />
+                                </Link>
                             </a>
                         </li>
                         <li className="d-lg-none">
-                            <a href="#" className="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch">
-                                search
+                            <a href="#" className="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                                <i className="fa fa-shopping-bag" data-feather="log-in"></i>
                             </a>
                         </li>
                     </ul>

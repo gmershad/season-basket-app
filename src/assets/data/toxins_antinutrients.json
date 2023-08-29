@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "name": "Glycoalkaloids",
+        "wiki": "https://en.wikipedia.org/wiki/Glycoalkaloid",
+        "required": false,
+        "type": "Toxin",
+        "problem": [
+            "Nausea",
+            "Vomiting",
+            "Diarrhoea",
+            "Stomach & Abdominal cramps"
+        ]
+    }
+]
