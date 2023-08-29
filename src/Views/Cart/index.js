@@ -7,23 +7,19 @@ class CartView extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            cartItems: []
         };
     }
 
-    cartItems = [];
-
     componentDidUpdate() {
-        this.setState({ cartItems: this.props.cartItems })
     }
 
     clearCart = () => {
         this.cartItems = [];
     };
 
-
     render() {
-        this.cartItems = this.props.cartItems;
+        const { cartItems } = this.props;
+
         return (
             <>
                 <div className="card">
@@ -42,7 +38,7 @@ class CartView extends Component {
                                 </thead>
                                 <tbody>
                                     {
-                                        this.cartItems.map((item) => (
+                                        cartItems && cartItems.length > 0 && cartItems.map((item) => (
                                             <tr key={item.ProductId}>
                                                 <td>
                                                     <div class="product-item">
@@ -70,7 +66,8 @@ class CartView extends Component {
                                                         </select>
                                                     </div>
                                                 </td>
-                                                <td class="text-center"><a class="remove-from-cart" href="#" data-toggle="tooltip" title="" data-original-title="Remove item"><i class="fa fa-trash"></i></a></td>
+                                                <td class="text-center"><a class="remove-from-cart" href="#"
+                                                    data-toggle="tooltip" title="" data-original-title="Remove item"><i class="fa fa-trash"></i></a></td>
                                             </tr>
                                         ))
                                     }
@@ -87,7 +84,7 @@ class CartView extends Component {
                                 <a class="btn btn-success" href="#">
                                     <PDFDownloadLink style={{ textDecoration: 'none', color: '#ffff' }}
                                         document={<PDFView data=
-                                            {this.cartItems} />}
+                                            {cartItems} />}
                                         fileName="Cart_Items.pdf">
                                         {({ blob, url, loading, error }) =>
                                             loading ? 'Loading document...' : 'Download PDF'
