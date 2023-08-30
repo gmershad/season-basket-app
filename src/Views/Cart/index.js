@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import PDFView from "../../Components/PDF"
 import { PDFDownloadLink } from '@react-pdf/renderer';
-import { PDFViewer } from '@react-pdf/renderer';
 
 class CartView extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            cartItems: this.props.cartItems
         };
     }
 
@@ -14,11 +14,20 @@ class CartView extends Component {
     }
 
     clearCart = () => {
-        this.cartItems = [];
+        this.setState({ cartItems: [] });
+        this.props.setCartItems([]);
     };
 
+    removeItem = (index) => {
+        const { cartItems } = this.state;
+        const updatedCartItems = [...cartItems];
+        updatedCartItems.splice(index, 1);
+        this.setState({ cartItems: updatedCartItems });
+        this.props.setCartItems(updatedCartItems);
+    }
+
     render() {
-        const { cartItems } = this.props;
+        const { cartItems } = this.state;
 
         return (
             <>
@@ -38,7 +47,7 @@ class CartView extends Component {
                                 </thead>
                                 <tbody>
                                     {
-                                        cartItems && cartItems.length > 0 && cartItems.map((item) => (
+                                        cartItems && cartItems.length > 0 && cartItems.map((item, idx) => (
                                             <tr key={item.ProductId}>
                                                 <td>
                                                     <div class="product-item">
@@ -66,8 +75,12 @@ class CartView extends Component {
                                                         </select>
                                                     </div>
                                                 </td>
-                                                <td class="text-center"><a class="remove-from-cart" href="#"
-                                                    data-toggle="tooltip" title="" data-original-title="Remove item"><i class="fa fa-trash"></i></a></td>
+                                                <td class="text-center" onClick={() => this.removeItem(idx)}>
+                                                    <a class="remove-from-cart" href="#"
+                                                        data-toggle="tooltip" title="" data-original-title="Remove item"
+                                                    ><i class="fa fa-trash"></i>
+                                                    </a>
+                                                </td>
                                             </tr>
                                         ))
                                     }
