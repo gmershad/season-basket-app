@@ -4,7 +4,8 @@ class WishListView extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            wishListItems: this.props.wishListItems
+            wishListItems: this.props.wishListItems,
+            cartItems: []
         };
     }
 
@@ -15,7 +16,17 @@ class WishListView extends Component {
     };
 
     removeItem = (index) => {
+        const { wishListItems } = this.state;
+        const updatedWishListItems = [...wishListItems];
+        updatedWishListItems.splice(index, 1);
+        this.setState({ wishListItems: updatedWishListItems });
+        this.props.setWishListItems(updatedWishListItems);
     }
+
+    addToCart = (productItem, index) => {
+        this.props.setCartItems([...this.props.cartItems, productItem]);
+        this.removeItem(index);
+    };
 
     render() {
         const { wishListItems } = this.state;
@@ -36,8 +47,10 @@ class WishListView extends Component {
                                         <h5 class="product-title">{item.Name}</h5>
                                         <p class="product-price">{item.price}</p>
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <button class="btn btn-danger">Remove</button>
-                                            <button class="btn btn-success">Move to Cart</button>
+                                            <button class="btn btn-danger"
+                                                onClick={() => this.removeItem(idx)}>Remove</button>
+                                            <button class="btn btn-success"
+                                                onClick={() => this.addToCart(item, idx)}>Move to Cart</button>
                                         </div>
                                     </div>
                                 </div>
