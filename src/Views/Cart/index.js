@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PDFView from "../../Components/PDF"
 import { PDFDownloadLink } from '@react-pdf/renderer';
+import { Link } from 'react-router-dom';
 
 class CartView extends Component {
     constructor(props) {
@@ -77,7 +78,8 @@ class CartView extends Component {
                                                 </td>
                                                 <td class="text-center" onClick={() => this.removeItem(idx)}>
                                                     <a class="remove-from-cart" href="#"
-                                                        data-toggle="tooltip" title="" data-original-title="Remove item"
+                                                        data-toggle="tooltip" title=""
+                                                        data-original-title="Remove item"
                                                     ><i class="fa fa-trash"></i>
                                                     </a>
                                                 </td>
@@ -88,8 +90,13 @@ class CartView extends Component {
                             </table>
                         </div>
                         <div class="shopping-cart-footer">
-                            <div class="column"><a class="btn btn-outline-secondary"
-                                href="#"><i class="icon-arrow-left"></i>&nbsp;Back to Shopping</a></div>
+                            <div class="column">
+                                <Link to={`/`}>
+                                    <a class="btn btn-outline-secondary" href="#">
+                                        <i class="icon-arrow-left"></i>
+                                        &nbsp;Back to Shopping</a>
+                                </Link>
+                            </div>
                             <div class="column"><a class="btn btn-primary" href="#" data-toast=""
                                 data-toast-type="success" data-toast-position="topRight"
                                 data-toast-icon="icon-circle-check" data-toast-title="Your cart"
@@ -108,7 +115,7 @@ class CartView extends Component {
                         </div>
 
                     </div>
-                </div>
+                </div >
             </>
         );
     }
