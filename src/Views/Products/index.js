@@ -71,7 +71,8 @@ class ProductView extends Component {
                     <ProductMenu />
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                            <div class="product-grid row row-cols-1 row-cols-sm-2 
+                            row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
                                 {this.state.products.map((productItem, index) => (
                                     <div className="col">
                                         <div class="product-item">
@@ -87,13 +88,14 @@ class ProductView extends Component {
                                                             class="tab-image" />
                                                     </a>
                                                 </figure>
-                                                <h3>{productItem.Name}</h3>
+                                                <div className="text-center">
+                                                    <h3>{productItem.Name}</h3>
+                                                </div>
                                                 {
                                                     !productItem.Seasons.some(season => Object.values(season).includes(this.state.selectedSeason)) &&
                                                     this.state.selectedSeason >= 0 && (
-                                                        <div className="row">
+                                                        <div className="row text-center">
                                                             <div className="col">
-                                                                <i class="fa fa-thumbs-down"></i>
                                                                 <span className="badge bg-warning me-1">
                                                                     Off Season
                                                                 </span>
@@ -101,15 +103,18 @@ class ProductView extends Component {
                                                         </div>
                                                     )
                                                 }
-                                                <div className="row">
+                                                <div className="row text-center">
                                                     <div className="col">
+                                                        <i class="fa fa-thumbs-up"
+                                                            style={{ fontSize: "18px", color: "#006400", paddingRight: '5px' }}></i>
                                                         {productItem.Health.Good.map((healthItem, idx) => (
                                                             <span key={idx} className="badge bg-success me-1">
-                                                                {healthItem}</span>
+                                                                {healthItem}
+                                                            </span>
                                                         ))}
                                                     </div>
                                                 </div>
-                                                <div className="row">
+                                                <div className="row text-center">
                                                     <div className="col">
                                                         {productItem.Health.Bad.diseaseId.map((diseaseId, idx) => {
                                                             const disease = diseaseFilter.find(item => item.diseaseId === diseaseId);
@@ -137,8 +142,8 @@ class ProductView extends Component {
                                 ))}
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </div >
+                </section >
             </>
         );
     }
