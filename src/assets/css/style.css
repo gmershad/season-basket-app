@@ -464,3 +464,13 @@ h6 {
 .product-price {
   color: #f55;
 }
+
+.product-item .offSeason {
+  position: absolute;
+  top: 35px;
+  right: 180px;
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+  transform: rotate(-25deg);
+  display: inline-block;
+}

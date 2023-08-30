@@ -76,6 +76,21 @@ class ProductView extends Component {
                                 {this.state.products.map((productItem, index) => (
                                     <div className="col">
                                         <div class="product-item">
+                                            <span className="offSeason">
+                                                {
+                                                    !productItem.Seasons.some(season => Object.values(season).includes(this.state.selectedSeason)) &&
+                                                    this.state.selectedSeason >= 0 && (
+                                                        <div className="row text-center">
+                                                            <div className="col">
+                                                                <span className="badge bg-warning me-1">
+                                                                    Off Season
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                }
+                                            </span>
+
                                             <a href="#" class="btn-wishlist">
                                                 <i class="fa fa-heart" aria-hidden="true"
                                                     onClick={() => this.addToWishList(productItem)} />
@@ -91,18 +106,7 @@ class ProductView extends Component {
                                                 <div className="text-center">
                                                     <h3>{productItem.Name}</h3>
                                                 </div>
-                                                {
-                                                    !productItem.Seasons.some(season => Object.values(season).includes(this.state.selectedSeason)) &&
-                                                    this.state.selectedSeason >= 0 && (
-                                                        <div className="row text-center">
-                                                            <div className="col">
-                                                                <span className="badge bg-warning me-1">
-                                                                    Off Season
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    )
-                                                }
+
                                                 <div className="row text-center">
                                                     <div className="col">
                                                         <i class="fa fa-thumbs-up"
