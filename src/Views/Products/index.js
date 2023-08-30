@@ -90,7 +90,6 @@ class ProductView extends Component {
                                                     )
                                                 }
                                             </span>
-
                                             <a href="#" class="btn-wishlist">
                                                 <i class="fa fa-heart" aria-hidden="true"
                                                     onClick={() => this.addToWishList(productItem)} />
