@@ -59,6 +59,10 @@ class ProductView extends Component {
         this.props.setCartItems([...this.props.cartItems, productItem]);
     };
 
+    addToWishList = (productItem) => {
+        this.props.setWishListItems([...this.props.wishListItems, productItem]);
+    }
+
     render() {
         const { diseaseFilter } = this.state;
         return (
@@ -72,7 +76,8 @@ class ProductView extends Component {
                                     <div className="col">
                                         <div class="product-item">
                                             <a href="#" class="btn-wishlist">
-                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                <i class="fa fa-heart" aria-hidden="true"
+                                                    onClick={() => this.addToWishList(productItem)} />
                                             </a>
                                             <Link to={`/product/${productItem.ProductId}`}
                                                 style={{ textDecoration: 'none' }}>
@@ -88,7 +93,8 @@ class ProductView extends Component {
                                                     this.state.selectedSeason >= 0 && (
                                                         <div className="row">
                                                             <div className="col">
-                                                                <span className="badge bg-danger me-1">
+                                                                <i class="fa fa-thumbs-down"></i>
+                                                                <span className="badge bg-warning me-1">
                                                                     Off Season
                                                                 </span>
                                                             </div>
@@ -98,7 +104,8 @@ class ProductView extends Component {
                                                 <div className="row">
                                                     <div className="col">
                                                         {productItem.Health.Good.map((healthItem, idx) => (
-                                                            <span key={idx} className="badge bg-success me-1"> {healthItem}</span>
+                                                            <span key={idx} className="badge bg-success me-1">
+                                                                {healthItem}</span>
                                                         ))}
                                                     </div>
                                                 </div>

@@ -8,6 +8,7 @@ import DiseaseNutritionContainer from "../Views/Nutrition/DiseaseNutrition/Disea
 import AyurvedicFoodContainer from "../Views/Ayurvedic/AyurvedicFoodContainer";
 import AntiNutrientsContainer from "../Views/AntiNutrients/AntiNutrientsContainer";
 import CartContainer from "../Views/Cart/CartContainer";
+import WishListContainer from "../Views/WishList/WishListContainer";
 
 const MainRoutes = [{
     path: '/',
@@ -49,6 +50,10 @@ const MainRoutes = [{
         {
             path: '/cart',
             element: <CartContainer />
+        },
+        {
+            path: '/wish',
+            element: <WishListContainer />
         },
     ]
 }];
