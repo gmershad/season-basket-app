@@ -103,9 +103,14 @@ class Typeahead extends React.Component {
                     <span>{suggestion.Name}</span>
                 </div>
             </div>
-
         );
     }
+
+    onSuggestionSelected = (event, { suggestion }) => {
+        event.preventDefault();
+        this.props.parentCallback(suggestion);
+    }
+
 
     render() {
         const { value, suggestions } = this.state;
@@ -123,6 +128,7 @@ class Typeahead extends React.Component {
                 onSuggestionsClearRequested={this.onSuggestionsClearRequested}
                 getSuggestionValue={this.getSuggestionValue}
                 renderSuggestion={this.renderSuggestion}
+                onSuggestionSelected={this.onSuggestionSelected}
                 inputProps={inputProps}
                 theme={this.theme}
             />

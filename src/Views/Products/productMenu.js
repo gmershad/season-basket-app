@@ -27,9 +27,9 @@ const ProductMenu = (props) => {
         setSearchText(event.target.value);
     }
 
-    const handleAddClick = () => {
-        dispatch(setSearchedItem(searchText));
-        setSearchText('');
+    const handleCallback = (data) => {
+        setSearchText(data);
+        dispatch(setSearchedItem(data));
     }
 
     return (
@@ -56,14 +56,7 @@ const ProductMenu = (props) => {
                     </select>
                 </div>
                 <div class="col-auto d-flex justify-content-center">
-                    {/* <input class="form-control" type="text" placeholder="Search"
-                        aria-label="Search"
-                        value={searchText}
-                        onChange={handleSearchChange} />
-                    <button class="btn btn-secondary ms-2" onClick={handleAddClick}>
-                        <i class="fa fa-plus" />
-                    </button> */}
-                    <Typeahead />
+                    <Typeahead parentCallback={handleCallback} />
                 </div>
 
                 <div className="col-auto">

@@ -47,11 +47,9 @@ class ProductView extends Component {
 
     handleSearchedItems() {
         const searchedItem = this.props.searchedItems;
-        const filteredData = data.productData.filter(dataItem => {
-            return Object.values(dataItem).includes(searchedItem);
-        });
+        console.log(searchedItem);
         this.setState(prevState => ({
-            products: [...prevState.products, ...filteredData]
+            products: [...prevState.products, ...[searchedItem]]
         }));
     }
 
