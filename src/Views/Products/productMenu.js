@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import data from "../../assets/data/season";
+import productData from "../../assets/data/products";
 import { useSelector, useDispatch } from 'react-redux';
 import { setSelectedSeason } from '../../redux/actions/seasonActions';
 import { setSelectedFilters, setSearchedItem } from '../../redux/actions/filterActions';
 import Filter from "../../Components/Filter";
+import Typeahead from "../../Components/Autosuggest";
 
 const ProductMenu = (props) => {
     const selectedSeason = useSelector(state => state.season.selectedSeason);
@@ -54,13 +56,14 @@ const ProductMenu = (props) => {
                     </select>
                 </div>
                 <div class="col-auto d-flex justify-content-center">
-                    <input class="form-control" type="text" placeholder="Search"
+                    {/* <input class="form-control" type="text" placeholder="Search"
                         aria-label="Search"
                         value={searchText}
                         onChange={handleSearchChange} />
                     <button class="btn btn-secondary ms-2" onClick={handleAddClick}>
                         <i class="fa fa-plus" />
-                    </button>
+                    </button> */}
+                    <Typeahead />
                 </div>
 
                 <div className="col-auto">
