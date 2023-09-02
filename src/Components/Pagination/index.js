@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const Pagination = ({ data, totalElements, parentCallback }) => {
     const [posts, SetPosts] = useState(data.data);
-    const [postPerPage, SetPostPerPage] = useState(10);
+    const [postPerPage, SetPostPerPage] = useState(50);
     const [currentPage, SetCurrentPage] = useState(1);
 
     const [pageItem, SetPageItem] = useState({
@@ -28,7 +28,7 @@ const Pagination = ({ data, totalElements, parentCallback }) => {
         SetCurrentPage(1);
     }
 
-    const numOfPages = Math.ceil(totalElements / postPerPage);
+    const numOfPages = totalElements;//Math.ceil(totalElements / postPerPage);
     const numOfButtons = [];
     for (let i = 1; i <= numOfPages; i++) {
         numOfButtons.push(i);

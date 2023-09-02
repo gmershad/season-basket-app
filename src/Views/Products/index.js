@@ -17,7 +17,7 @@ class ProductView extends Component {
     }
 
     componentDidMount() {
-        this.props.getCatalog(1, 10, -1);
+        this.props.getCatalog(1, 50, -1);
     }
 
     componentDidUpdate(prevProps) {
@@ -68,9 +68,8 @@ class ProductView extends Component {
 
 
     handleCallback = (data) => {
-        this.props.getCatalog(
-            data.currentPage - 1,
-            data.pageSize, -1);
+        console.log(data);
+        this.props.getCatalog(data.currentPage, data.postPerPage, -1);
     };
 
 
@@ -169,7 +168,7 @@ class ProductView extends Component {
                         {this.props && this.props.catalog && this.props.catalog.data && (
                             <Pagination
                                 data={this.props.catalog.data}
-                                totalElements={this.props.catalog.total}
+                                totalElements={this.props.catalog.totalPages}
                                 parentCallback={this.handleCallback}
                             />
                         )}
