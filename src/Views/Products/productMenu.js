@@ -59,13 +59,13 @@ const ProductMenu = (props) => {
                     <Typeahead parentCallback={handleCallback} />
                 </div>
 
-                <div className="col-auto">
+                {/* <div className="col-auto">
                     <span class="rounded-pill badge-add-filter"
                         data-bs-toggle="modal" href="#modalStart"
                         role="button">
                         Select Filter <i class="fa fa-plus ms-1"></i>
                     </span>
-                </div>
+                </div> */}
                 <div className="col">
                     {Filters.map(filter => (
                         <span className="badge badge-light-light rounded-pill text-dark py-0 fw-normal">
