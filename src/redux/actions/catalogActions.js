@@ -25,6 +25,34 @@ export const getCatalog = (page, pageSize, seasonId) => (dispatch) => {
         });
 };
 
+export const getProductDetail = (productId) => (dispatch) => {
+    dispatch({
+        type: GET_PRODUCT_BEGIN,
+    });
+    return client({
+        method: "GET",
+        url: `/public/api/catalog/${productId}`,
+    })
+        .then((res) => {
+            dispatch({
+                type: GET_PRODUCT_SUCCESS,
+                payload: res,
+            });
+            return res;
+        })
+        .catch((error) => {
+            dispatch({
+                type: GET_PRODUCT_FAIL,
+                payload: { error },
+            });
+            return error;
+        });
+};
+
 export const GET_CATALOG_BEGIN = "GET_CATALOG_BEGIN";
 export const GET_CATALOG_SUCCESS = "GET_CATALOG_SUCCESS";
 export const GET_CATALOG_FAIL = "GET_CATALOG_FAIL";
+
+export const GET_PRODUCT_BEGIN = "GET_PRODUCT_BEGIN";
+export const GET_PRODUCT_SUCCESS = "GET_PRODUCT_SUCCESS";
+export const GET_PRODUCT_FAIL = "GET_PRODUCT_FAIL";

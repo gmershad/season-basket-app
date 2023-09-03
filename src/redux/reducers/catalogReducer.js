@@ -1,11 +1,15 @@
 import {
     GET_CATALOG_BEGIN,
     GET_CATALOG_SUCCESS,
-    GET_CATALOG_FAIL
+    GET_CATALOG_FAIL,
+    GET_PRODUCT_BEGIN,
+    GET_PRODUCT_SUCCESS,
+    GET_PRODUCT_FAIL
 } from "../actions/catalogActions";
 
 const initialState = {
     catalog: null,
+    catalogDetail: null,
     loading: false,
     error: null,
 };
@@ -25,6 +29,24 @@ export default (state = initialState, action) => {
                 catalog: action.payload.data,
             };
         case GET_CATALOG_FAIL:
+            return {
+                ...state,
+                loading: false,
+                error: action.payload.error.response.data,
+            };
+        case GET_PRODUCT_BEGIN:
+            return {
+                ...state,
+                loading: true,
+                error: null,
+            };
+        case GET_PRODUCT_SUCCESS:
+            return {
+                ...state,
+                loading: false,
+                catalogDetail: action.payload.data,
+            };
+        case GET_PRODUCT_FAIL:
             return {
                 ...state,
                 loading: false,
