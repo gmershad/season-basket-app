@@ -34,13 +34,13 @@ class ProductDetail extends Component {
                                                 {catalogDetil.Description}
                                             </strong>
                                         </p>
-                                        <h6> Nutrients:</h6>
-                                        <p>Stolon of Taro(roots), kochur Mukhi contains (in 230 g) Calories: 165, Carbs: 26g, Fat: 6g, Protein: 6g.</p>
+                                        <h6> Nutrients ({catalogDetil.Serving}):</h6>
+                                        <p> {catalogDetil.Nutrients}</p>
                                         <h6>Benefits:</h6>
                                         <ul class="inner-list">
-                                            {catalogDetil.Health.Good.map((goodItem, idx) => (
+                                            {catalogDetil.Health.Benefits.map((benefit, idx) => (
                                                 <li key={idx} >
-                                                    {goodItem}
+                                                    {benefit}
                                                 </li>
                                             ))}
                                         </ul>

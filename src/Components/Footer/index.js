@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "../../assets/images/logo3.jpg"
 
 const Footer = (props) => {
 
@@ -22,7 +23,7 @@ const Footer = (props) => {
 
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="footer-menu">
-                                <img src="images/logo.png" alt="logo" />
+                                <img src={logo} alt="logo" style={{ height: 'auto', width: '290px' }} />
                                 <div class="social-links mt-5">
                                     <ul class="d-flex list-unstyled gap-2">
                                         <li>
