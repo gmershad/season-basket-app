@@ -4,7 +4,7 @@ import { setSelectedSeason } from '../../redux/actions/seasonActions';
 import { setSelectedFilters, setSearchedItem } from '../../redux/actions/filterActions';
 import { setCartItems } from "../../redux/actions/cartActions";
 import { setWishListItems } from "../../redux/actions/wishListAction";
-import { getCatalog } from "../../redux/actions/catalogActions"
+import { getCatalog, getCatalogById } from "../../redux/actions/catalogActions"
 
 const mapStoreToProps = state => ({
     selectedSeason: state.season.selectedSeason,
@@ -12,7 +12,8 @@ const mapStoreToProps = state => ({
     searchedItems: state.filter.searchedItems,
     cartItems: state.cart.cartItems,
     wishListItems: state.wishList.wishListItems,
-    catalog: state.catalog.catalog
+    catalog: state.catalog.catalog,
+    singleCatalog: state.catalog.singleCatalog
 });
 
 
@@ -23,6 +24,7 @@ const mapDispatchToProps = dispatch => ({
     setCartItems: (cartItems) => dispatch(setCartItems(cartItems)),
     setWishListItems: (wishListItems) => dispatch(setWishListItems(wishListItems)),
     getCatalog: (page, pageSize, seasonId) => dispatch(getCatalog(page, pageSize, seasonId)),
+    getCatalogById: (productId) => dispatch(getCatalogById(productId)),
 });
 
 export default connect(mapStoreToProps, mapDispatchToProps)(ProductView);

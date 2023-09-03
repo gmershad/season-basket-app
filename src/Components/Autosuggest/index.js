@@ -1,17 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Autosuggest from 'react-autosuggest';
-import data from "../../assets/data/products";
+import { searchCatalog } from "../../redux/actions/catalogActions";
+import { useSelector, useDispatch } from 'react-redux';
 
-class Typeahead extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            value: '',
-            suggestions: [],
-        };
-    }
+const Typeahead = (props) => {
+    const [value, setValue] = useState('');
+    const [suggestions, setSuggestions] = useState([]);
+    const dispatch = useDispatch();
 
-    theme = {
+    const theme = {
         container: {
             position: 'relative'
         },
@@ -56,83 +53,58 @@ class Typeahead extends React.Component {
         }
     };
 
-    onChange = (event, { newValue, method }) => {
-        this.setState({
-            value: newValue
+    const onChange = (event, { newValue, method }) => {
+        setValue(newValue);
+    };
+
+    const getSuggestions = (value) => {
+        dispatch(searchCatalog(value.value)).then((response) => {
+            const catalogData = response.data;
+            setSuggestions(catalogData);
         });
     };
 
-    onSuggestionsFetchRequested = ({ value }) => {
-        this.setState({
-            suggestions: this.getSuggestions(value)
-        });
-    };
-
-    onSuggestionsClearRequested = () => {
-        this.setState({
-            suggestions: []
-        });
-    };
-
-    escapeRegexCharacters(str) {
-        return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    }
-
-    getSuggestions(value) {
-        const escapedValue = this.escapeRegexCharacters(value.trim());
-
-        if (escapedValue === '') {
-            return [];
-        }
-
-        const regex = new RegExp('^' + escapedValue, 'i');
-        return data.productData.filter(language => regex.test(language.Name));
-    }
-
-    getSuggestionValue(suggestion) {
+    const getSuggestionValue = (suggestion) => {
         return suggestion.Name;
-    }
+    };
 
-    renderSuggestion(suggestion) {
+    const renderSuggestion = (suggestion) => {
         return (
             <div className="row align-items-center">
                 <div className="col-auto">
-                    <img src={process.env.PUBLIC_URL + '/' + suggestion.ImgUrl} alt={suggestion.Name} height={50} />
+                    <img src={suggestion.ImgUrl} alt={suggestion.Name} height={50} />
                 </div>
                 <div className="col-auto">
                     <span>{suggestion.Name}</span>
                 </div>
             </div>
         );
-    }
+    };
 
-    onSuggestionSelected = (event, { suggestion }) => {
+    const onSuggestionSelected = (event, { suggestion }) => {
         event.preventDefault();
-        this.props.parentCallback(suggestion);
-    }
+        props.parentCallback(suggestion);
+    };
 
-    render() {
-        const { value, suggestions } = this.state;
-        const inputProps = {
-            placeholder: "Search products",
-            value,
-            onChange: this.onChange,
-            className: 'form-control'
-        };
+    const inputProps = {
+        placeholder: "Search products",
+        value,
+        onChange,
+        className: 'form-control'
+    };
 
-        return (
-            <Autosuggest
-                suggestions={suggestions}
-                onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
-                onSuggestionsClearRequested={this.onSuggestionsClearRequested}
-                getSuggestionValue={this.getSuggestionValue}
-                renderSuggestion={this.renderSuggestion}
-                onSuggestionSelected={this.onSuggestionSelected}
-                inputProps={inputProps}
-                theme={this.theme}
-            />
-        );
-    }
+    return (
+        <Autosuggest
+            suggestions={suggestions}
+            onSuggestionsFetchRequested={getSuggestions}
+            onSuggestionsClearRequested={() => setSuggestions([])}
+            getSuggestionValue={getSuggestionValue}
+            renderSuggestion={renderSuggestion}
+            onSuggestionSelected={onSuggestionSelected}
+            inputProps={inputProps}
+            theme={theme}
+        />
+    );
 }
 
 export default Typeahead;

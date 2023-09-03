@@ -55,11 +55,15 @@ class ProductView extends Component {
 
     handleSearchedItems() {
         const searchedItem = this.props.searchedItems;
-        this.setState((prevState) => {
-            const updatedData = [...prevState.products.data, searchedItem];
-            return {
-                products: { ...prevState.products, data: updatedData },
-            };
+        this.props.getCatalogById(searchedItem.ProductId).then(() => {
+            this.setState((prevState) => {
+                const updatedData = [...prevState.products.data, this.props.singleCatalog.data];
+                return {
+                    products: { ...prevState.products, data: updatedData },
+                };
+            });
+        }).catch((error) => {
+            console.error("Error fetching data:", error);
         });
     }
 
