@@ -3,7 +3,8 @@ import ProductDetail from ".";
 import { getProductDetail } from "../../../redux/actions/catalogActions";
 
 const mapStoreToProps = (state) => ({
-    catalogDetail: state.catalog.catalogDetail
+    catalogDetail: state.catalog.catalogDetail,
+
 });
 
 const mapDispatchToProps = (dispatch) => ({
