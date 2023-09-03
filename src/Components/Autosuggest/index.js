@@ -111,7 +111,6 @@ class Typeahead extends React.Component {
         this.props.parentCallback(suggestion);
     }
 
-
     render() {
         const { value, suggestions } = this.state;
         const inputProps = {
