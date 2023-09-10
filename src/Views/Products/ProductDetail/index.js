@@ -23,7 +23,7 @@ class ProductDetail extends Component {
                         <>
                             <div className="row py-5">
                                 <div className="col-md-4">
-                                    <img src={catalogDetil.ImgUrl}
+                                    <img src={JSON.parse(catalogDetil.ProductImage.ImgUrls)[0]}
                                         class="tab-image" style={{ width: '300px', height: 'auto' }} />
                                 </div>
                                 <div className="col-md-8">
@@ -34,18 +34,25 @@ class ProductDetail extends Component {
                                                 {catalogDetil.Description}
                                             </strong>
                                         </p>
-                                        <h6> Nutrients ({catalogDetil.Serving}):</h6>
-                                        <p> {catalogDetil.Nutrients}</p>
+                                        <h6> Nutrients ({catalogDetil.ProductNutrition.Serving}):</h6>
+                                        <p>
+                                            <span className="me-2"><strong>Carbs:</strong>{catalogDetil.ProductNutrition.Carbs},</span>
+                                            <span className="me-2"><strong>Calories:</strong>{catalogDetil.ProductNutrition.Calories},</span>
+                                            <span className="me-2"><strong>Fat:</strong>{catalogDetil.ProductNutrition.Fat},</span>
+                                            <span><strong>Protein:</strong>{catalogDetil.ProductNutrition.Protein}</span>
+                                        </p>
                                         <h6>Benefits:</h6>
-                                        <ul class="inner-list">
-                                            {catalogDetil.Health.Benefits.map((benefit, idx) => (
-                                                <li key={idx} >
-                                                    {benefit}
-                                                </li>
+                                        <ul className="inner-list">
+                                            {JSON.parse(catalogDetil.ProductHealth.Good).map((benefit, idx) => (
+                                                <li key={idx}>{benefit}</li>
                                             ))}
                                         </ul>
                                         <h6>Allergy Info:</h6>
-                                        <p>{catalogDetil.AllergyInfo}</p>
+                                        <ul className="inner-list">
+                                            {JSON.parse(catalogDetil.ProductHealth.AllergyInfo).map((allergy, idx) => (
+                                                <li key={idx}>{allergy}</li>
+                                            ))}
+                                        </ul>
                                         <h6>Category:</h6>
                                         <p>{catalogDetil.Type}</p>
                                         {/* <div class="post-tags mt-5">

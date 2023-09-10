@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import data from "../../assets/data/season";
-import productData from "../../assets/data/products";
 import { useSelector, useDispatch } from 'react-redux';
-import { setSelectedSeason } from '../../redux/actions/seasonActions';
+import { setSelectedSeason, getSeasons } from '../../redux/actions/seasonActions';
 import { setSelectedFilters, setSearchedItem } from '../../redux/actions/filterActions';
 import Filter from "../../Components/Filter";
 import Typeahead from "../../Components/Autosuggest";
 
 const ProductMenu = (props) => {
+    const seasons = useSelector(state => state.season.seasons);
     const selectedSeason = useSelector(state => state.season.selectedSeason);
     const dispatch = useDispatch();
     const [Filters, setFilters] = useState([]);
@@ -32,6 +32,10 @@ const ProductMenu = (props) => {
         dispatch(setSearchedItem(data));
     }
 
+    useEffect(() => {
+        dispatch(getSeasons());
+    }, [dispatch]);
+
     return (
         <>
             <div className="row py-2">
@@ -48,10 +52,12 @@ const ProductMenu = (props) => {
                         onChange={handleSeasonChange}
                     >
                         <option value="" disabled>Choose a Season</option>
-                        {data.seasons.map((season) => (
-                            <option key={season.id} value={season.seasonId}>
-                                {season.name}
-                            </option>
+                        {seasons && seasons.map((season) => (
+                            season.IsActive ? (
+                                <option key={season.id} value={season.seasonId}>
+                                    {season.Name}
+                                </option>
+                            ) : null
                         ))}
                     </select>
                 </div>

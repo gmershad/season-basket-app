@@ -6,8 +6,7 @@ export const getCatalog = (page, pageSize, seasonId) => (dispatch) => {
     });
     return client({
         method: "GET",
-        url: `/public/api/catalog`,
-        params: { page: page, pageSize: pageSize, seasonId: seasonId },
+        url: `/public/api/product/${page}/${pageSize}/${seasonId}`,
     })
         .then((res) => {
             dispatch({
@@ -32,22 +31,20 @@ export const getCatalogById = (productId) => (dispatch) => {
     });
     return client({
         method: "GET",
-        url: `/public/api/catalog/${productId}`
-    })
-        .then((res) => {
-            dispatch({
-                type: GET_SINGLE_CATALOG_SUCCESS,
-                payload: res,
-            });
-            return res;
-        })
-        .catch((error) => {
-            dispatch({
-                type: GET_SINGLE_CATALOG_FAIL,
-                payload: { error },
-            });
-            return error;
+        url: `/public/api/product/${productId}`
+    }).then((res) => {
+        dispatch({
+            type: GET_SINGLE_CATALOG_SUCCESS,
+            payload: res,
         });
+        return res;
+    }).catch((error) => {
+        dispatch({
+            type: GET_SINGLE_CATALOG_FAIL,
+            payload: { error },
+        });
+        return error;
+    });
 };
 
 export const getProductDetail = (productId) => (dispatch) => {
@@ -56,7 +53,7 @@ export const getProductDetail = (productId) => (dispatch) => {
     });
     return client({
         method: "GET",
-        url: `/public/api/catalog/detail/${productId}`,
+        url: `/public/api/product/${productId}`,
     })
         .then((res) => {
             dispatch({

@@ -16,7 +16,7 @@ class ProductView extends Component {
     }
 
     componentDidMount() {
-        this.props.getCatalog(1, 50, -1)
+        this.props.getCatalog(1, 1, -1)
             .then(() => {
                 this.setState({ products: this.props.catalog });
             })
@@ -97,10 +97,10 @@ class ProductView extends Component {
                         <div class="col-md-12">
                             <div class="product-grid row row-cols-1 row-cols-sm-2 
                             row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
-                                {this.state.products && this.state.products.data.map((productItem, index) => (
+                                {this.state.products && this.state.products.items.map((productItem, index) => (
                                     <div className="col">
                                         <div class="product-item">
-                                            {
+                                            {/* {
                                                 <span className="offSeason">
                                                     {this.state.selectedSeason > 0 &&
                                                         !Object.values(productItem.Seasons).includes(this.state.selectedSeason) && (
@@ -111,7 +111,7 @@ class ProductView extends Component {
                                                             </div>
                                                         )}
                                                 </span>
-                                            }
+                                            } */}
                                             <a href="#" class="btn-wishlist">
                                                 <i class="fa fa-heart" aria-hidden="true"
                                                     onClick={() => this.addToWishList(productItem)} />
@@ -119,32 +119,44 @@ class ProductView extends Component {
                                             <Link to={`/product/${productItem.ProductId}`}
                                                 style={{ textDecoration: 'none' }}>
                                                 <figure>
-                                                    <a href="product-single.html" title="Product Title">
-                                                        <img src={productItem.ImgUrl}
-                                                            class="tab-image" style={{ width: '200px', height: 'auto' }} />
-                                                    </a>
+                                                    {
+                                                        productItem.ProductImage && (
+                                                            <a href="product-single.html" title="Product Title">
+                                                                <img
+                                                                    src={JSON.parse(productItem.ProductImage.ImgUrls)[0]}
+                                                                    className="tab-image"
+                                                                    style={{ width: '200px', height: 'auto' }}
+                                                                    alt="Product Image"
+                                                                />
+                                                            </a>
+                                                        )
+                                                    }
                                                 </figure>
                                                 <div className="text-center">
                                                     <h3>{productItem.Name}</h3>
                                                 </div>
+                                                {
+                                                    productItem.ProductHealth && (
+                                                        <div className="row text-center">
+                                                            <div className="col">
+                                                                <i className="fa fa-thumbs-up"
+                                                                    style={{
+                                                                        fontSize: "18px", color: "#006400",
+                                                                        paddingRight: '5px'
+                                                                    }}></i>
+                                                                {JSON.parse(productItem.ProductHealth.Good).map((healthItem, idx) => (
+                                                                    <span key={idx} className="badge bg-success me-1">
+                                                                        {healthItem}
+                                                                    </span>
+                                                                ))}
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                }
 
-                                                <div className="row text-center">
+                                                {/* <div className="row text-center">
                                                     <div className="col">
-                                                        <i class="fa fa-thumbs-up"
-                                                            style={{
-                                                                fontSize: "18px", color: "#006400",
-                                                                paddingRight: '5px'
-                                                            }}></i>
-                                                        {productItem.Health.Good.map((healthItem, idx) => (
-                                                            <span key={idx} className="badge bg-success me-1">
-                                                                {healthItem}
-                                                            </span>
-                                                        ))}
-                                                    </div>
-                                                </div>
-                                                <div className="row text-center">
-                                                    <div className="col">
-                                                        {productItem.Health.Bad.diseaseId.map((diseaseId, idx) => {
+                                                        {productItem.Health && productItem.Health.Bad.diseaseId.map((diseaseId, idx) => {
                                                             const disease = diseaseFilter.find(item => item.diseaseId === diseaseId);
                                                             return (
                                                                 <span key={idx} className="badge bg-danger me-1">
@@ -153,7 +165,7 @@ class ProductView extends Component {
                                                             );
                                                         })}
                                                     </div>
-                                                </div>
+                                                </div> */}
                                             </Link>
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <div class="input-group product-qty">
