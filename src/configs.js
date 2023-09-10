@@ -1,7 +1,7 @@
 const config = {
     basename: '/',
     defaultPath: '/',
-    baseUrl: "http://localhost:8080"
+    baseUrl: "https://dev.seasonbasket.in"
 };
 
 export default config;
