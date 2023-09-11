@@ -78,7 +78,7 @@ export const searchCatalog = (text) => (dispatch) => {
     });
     return client({
         method: "GET",
-        url: `/public/api/catalog/search/${text}`,
+        url: `/public/api/product/hints/${text}`,
     })
         .then((res) => {
             dispatch({

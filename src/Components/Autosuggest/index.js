@@ -59,7 +59,7 @@ const Typeahead = (props) => {
 
     const getSuggestions = (value) => {
         dispatch(searchCatalog(value.value)).then((response) => {
-            const catalogData = response.data;
+            const catalogData = response.data.hints;
             setSuggestions(catalogData);
         });
     };
@@ -71,9 +71,9 @@ const Typeahead = (props) => {
     const renderSuggestion = (suggestion) => {
         return (
             <div className="row align-items-center">
-                <div className="col-auto">
+                {/* <div className="col-auto">
                     <img src={suggestion.ImgUrl} alt={suggestion.Name} height={50} />
-                </div>
+                </div> */}
                 <div className="col-auto">
                     <span>{suggestion.Name}</span>
                 </div>
