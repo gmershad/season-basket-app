@@ -19,13 +19,15 @@ const Sidebar = () => {
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="pages-profile.html">
-                            <i class="align-middle fa fa-leaf" data-feather="user"></i>
-                            <span class="align-middle">
-                                <Link to="product">Product</Link>
-                            </span>
+                        <Link to="product">
+                            <a class="sidebar-link" href="pages-profile.html">
+                                <i class="align-middle fa fa-leaf" data-feather="user"></i>
+                                <span class="align-middle">
+                                    Product
+                                </span>
 
-                        </a>
+                            </a>
+                        </Link>
                     </li>
 
                     <li class="sidebar-item">

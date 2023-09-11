@@ -126,7 +126,7 @@ const Filter = ({ props, callBack }) => {
                             }}>
                             {data.diseaseData.map(disease => (
                                 <a className="list-group-item list-group-item-action p-2 d-flex active"
-                                    data-bs-toggle="button" role="button">
+                                    data-bs-toggle="button" role="button" key={disease.name}>
                                     <div className="me-2 d-flex align-items-center">
                                         <span className="fa-stack" style={{ verticalAlign: "top" }}>
                                             <i className="fa fa-stack-2x"></i>

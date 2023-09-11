@@ -91,15 +91,15 @@ class ProductView extends Component {
 
         return (
             <>
-                <section class="py-1">
+                <section className="py-1">
                     <ProductMenu />
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="product-grid row row-cols-1 row-cols-sm-2 
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="product-grid row row-cols-1 row-cols-sm-2 
                             row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
                                 {this.state.products && this.state.products.items.map((productItem, index) => (
                                     <div className="col">
-                                        <div class="product-item">
+                                        <div className="product-item">
                                             {/* {
                                                 <span className="offSeason">
                                                     {this.state.selectedSeason > 0 &&
@@ -112,8 +112,8 @@ class ProductView extends Component {
                                                         )}
                                                 </span>
                                             } */}
-                                            <a href="#" class="btn-wishlist">
-                                                <i class="fa fa-heart" aria-hidden="true"
+                                            <a href="#" className="btn-wishlist">
+                                                <i className="fa fa-heart" aria-hidden="true"
                                                     onClick={() => this.addToWishList(productItem)} />
                                             </a>
                                             <Link to={`/product/${productItem.ProductId}`}
@@ -167,14 +167,14 @@ class ProductView extends Component {
                                                     </div>
                                                 </div> */}
                                             </Link>
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div class="input-group product-qty">
-                                                    <span class="input-group-btn"></span>
-                                                    <span class="input-group-btn"></span>
+                                            <div className="d-flex align-items-center justify-content-between">
+                                                <div className="input-group product-qty">
+                                                    <span className="input-group-btn"></span>
+                                                    <span className="input-group-btn"></span>
                                                 </div>
-                                                <a href="#" class="nav-link"
+                                                <a href="#" className="nav-link"
                                                     onClick={() => this.addToCart(productItem)}>
-                                                    <i class="fa fa-shopping-cart" />
+                                                    <i className="fa fa-shopping-cart" />
                                                 </a>
                                             </div>
                                         </div>

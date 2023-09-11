@@ -38,13 +38,13 @@ const Header = (props) => {
         <>
             {showNotification && <Notification message="Item added to cart!" />}
 
-            <div class="row py-3">
-                <div class="col-sm-4 col-lg-3 text-center text-sm-start">
-                    <div class="main-logo">
+            <div className="row py-3">
+                <div className="col-sm-4 col-lg-3 text-center text-sm-start">
+                    <div className="main-logo">
                         <Link to={`/`} >
-                            <a href="">
+                            <span href="">
                                 <img src={logo} alt="logo" className="img-fluid" />
-                            </a>
+                            </span>
                         </Link>
                     </div>
                 </div>
@@ -111,7 +111,7 @@ const Header = (props) => {
                     </nav>
                 </div> */}
                 <div className="col-md-2 py-2">
-                    <select class="form-select">
+                    <select className="form-select">
                         <option>All Categories</option>
                         {/* <option>Groceries</option>
                         <option>Drinks</option>
@@ -138,15 +138,16 @@ const Header = (props) => {
                         </li>
                         <li>
                             <Link to={`/wish`} style={{ textDecoration: 'none' }}>
-                                <a href="#" className="rounded-circle bg-light p-2 mx-1">
+                                <span href="#" className="rounded-circle bg-light p-2 mx-1">
                                     <i className="fa fa-heart" data-feather="log-in"></i>
-                                </a>
+                                </span>
                             </Link>
                         </li>
                         <li>
-                            <a href="#" className="rounded-circle bg-light p-2 mx-1"
-                                style={{ position: 'relative' }}>
-                                <Link to={`/cart`} style={{ textDecoration: 'none' }}>
+                            <Link to={`/cart`} style={{ textDecoration: 'none' }}>
+                                <span href="#" className="rounded-circle bg-light p-2 mx-1"
+                                    style={{ position: 'relative' }}>
+
                                     <i className="fa fa-shopping-bag" aria-hidden="true">
                                         {
                                             cartItems && cartItems.length > 0 && (
@@ -154,8 +155,8 @@ const Header = (props) => {
                                             )
                                         }
                                     </i>
-                                </Link>
-                            </a>
+                                </span>
+                            </Link>
                         </li>
                         <li className="d-lg-none">
                             <a href="#" className="rounded-circle bg-light p-2 mx-1"
