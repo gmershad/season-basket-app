@@ -16,7 +16,7 @@ class ProductView extends Component {
     }
 
     componentDidMount() {
-        this.props.getCatalog(1, 1, -1)
+        this.props.getCatalog(1, 30, -1)
             .then(() => {
                 this.setState({ products: this.props.catalog });
             })
