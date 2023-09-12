@@ -29,6 +29,7 @@ class CartView extends Component {
 
     render() {
         const { cartItems } = this.state;
+        console.log(cartItems);
 
         return (
             <>
@@ -57,7 +58,7 @@ class CartView extends Component {
                                                         <td>
                                                             <div class="product-item">
                                                                 <a class="product-thumb" href="#">
-                                                                    <img src={item.ImgUrl}
+                                                                    <img src={JSON.parse(item.ProductImage.ImgUrls)[0]}
                                                                         alt="Product" />
                                                                 </a>
                                                                 <div class="product-info">

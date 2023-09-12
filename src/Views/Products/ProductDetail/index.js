@@ -27,8 +27,8 @@ class ProductDetail extends Component {
                                         class="tab-image" style={{ width: '300px', height: 'auto' }} />
                                 </div>
                                 <div className="col-md-8">
-                                    <h3 class="page-title">{catalogDetil.Name}</h3>
-                                    <div class="post-description padding-medium">
+                                    <h3 className="page-title">{catalogDetil.Name}</h3>
+                                    <div className="post-description padding-medium">
                                         <p>
                                             <strong>
                                                 {catalogDetil.Description}

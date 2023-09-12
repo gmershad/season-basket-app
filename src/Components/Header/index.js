@@ -158,13 +158,6 @@ const Header = (props) => {
                                 </span>
                             </Link>
                         </li>
-                        <li className="d-lg-none">
-                            <a href="#" className="rounded-circle bg-light p-2 mx-1"
-                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
-                                aria-controls="offcanvasCart">
-                                <i className="fa fa-shopping-bag" data-feather="log-in"></i>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div >

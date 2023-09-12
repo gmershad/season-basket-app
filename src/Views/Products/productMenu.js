@@ -39,12 +39,12 @@ const ProductMenu = (props) => {
     return (
         <>
             <div className="row py-2">
-                <div className="col-md-2">
+                <div className="col-md-2 mb-1">
                     <select className="form-select" aria-label="Default select example">
                         <option defaultValue="India">India</option>
                     </select>
                 </div>
-                <div className="col-md-2">
+                <div className="col-md-2 mb-1">
                     <select
                         className="form-select"
                         aria-label="Default select example"
@@ -61,7 +61,7 @@ const ProductMenu = (props) => {
                         ))}
                     </select>
                 </div>
-                <div className="col-auto d-flex justify-content-center">
+                <div className="col-md-2 mb-1">
                     <Typeahead parentCallback={handleCallback} />
                 </div>
 

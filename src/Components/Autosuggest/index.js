@@ -87,7 +87,7 @@ const Typeahead = (props) => {
     };
 
     const inputProps = {
-        placeholder: "Search products",
+        placeholder: "Add products",
         value,
         onChange,
         className: 'form-control'

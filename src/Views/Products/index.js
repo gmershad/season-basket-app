@@ -184,9 +184,9 @@ class ProductView extends Component {
                         </div>
                     </div >
                     <div className="row">
-                        {this.props && this.props.catalog && this.props.catalog.data && (
+                        {this.state.products && this.state.products.items && (
                             <Pagination
-                                data={this.props.catalog.data}
+                                data={this.state.products.items}
                                 totalElements={this.props.catalog.totalPages}
                                 parentCallback={this.handleCallback}
                             />
