@@ -78,6 +78,8 @@ class ProductView extends Component {
     }
 
     handleCallback = (data) => {
+        if (this.props.searchedItems != null) return;
+
         this.props.getCatalog(data.currentPage, data.postPerPage, this.props.selectedSeason)
             .then(() => {
                 this.setState({ products: this.props.catalog });
@@ -89,6 +91,7 @@ class ProductView extends Component {
 
     render() {
         const { diseaseFilter } = this.state;
+        console.log(this.state.products);
 
         return (
             <>
@@ -101,10 +104,11 @@ class ProductView extends Component {
                                 {this.state.products && this.state.products.items.map((productItem, index) => (
                                     <div className="col">
                                         <div className="product-item">
-                                            {/* {
+                                            {
                                                 <span className="offSeason">
                                                     {this.state.selectedSeason > 0 &&
-                                                        !Object.values(productItem.Seasons).includes(this.state.selectedSeason) && (
+                                                        productItem.ProductSeasons.find(item => item.SeasonId
+                                                            !== this.state.selectedSeason) && (
                                                             <div className="row text-center">
                                                                 <div className="col">
                                                                     <span className="badge bg-warning me-1">Off Season</span>
@@ -112,7 +116,7 @@ class ProductView extends Component {
                                                             </div>
                                                         )}
                                                 </span>
-                                            } */}
+                                            }
                                             <a href="#" className="btn-wishlist">
                                                 <i className="fa fa-heart" aria-hidden="true"
                                                     onClick={() => this.addToWishList(productItem)} />
