@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import ProductMenu from "./productMenu";
 import Pagination from "../../Components/Pagination";
+import { getCurrentSeason } from "../../utils";
 
 class ProductView extends Component {
     constructor(props) {
@@ -16,7 +17,8 @@ class ProductView extends Component {
     }
 
     componentDidMount() {
-        this.props.getCatalog(1, 30, this.props.selectedSeason)
+        const currentSeasonId = getCurrentSeason();
+        this.props.getCatalog(1, 30, currentSeasonId)
             .then(() => {
                 this.setState({ products: this.props.catalog });
             })
@@ -39,7 +41,7 @@ class ProductView extends Component {
 
     handleSelectedSeasonChange() {
         const selectedSeason = parseInt(this.props.selectedSeason);
-        this.props.getCatalog(1, 50, selectedSeason)
+        this.props.getCatalog(1, 30, selectedSeason)
             .then(() => {
                 this.setState({ products: this.props.catalog, selectedSeason: selectedSeason });
             })
@@ -57,9 +59,9 @@ class ProductView extends Component {
         const searchedItem = this.props.searchedItems;
         this.props.getCatalogById(searchedItem.ProductId).then(() => {
             this.setState((prevState) => {
-                const updatedData = [...prevState.products.data, this.props.singleCatalog.data];
+                const updatedData = [...prevState.products.items, this.props.singleCatalog];
                 return {
-                    products: { ...prevState.products, data: updatedData },
+                    products: { ...prevState.products, items: updatedData },
                 };
             });
         }).catch((error) => {
