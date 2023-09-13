@@ -8,13 +8,27 @@ import Typeahead from "../../Components/Autosuggest";
 
 const ProductMenu = (props) => {
     const seasons = useSelector(state => state.season.seasons);
-    const selectedSeason = useSelector(state => state.season.selectedSeason);
+
+    const getCurrentSeason = () => {
+        const currentDate = new Date();
+        const currentDay = currentDate.getDate();
+        const currentMonthId = currentDate.getMonth();
+        if (currentDay <= 15) {
+            return currentMonthId;
+        } else {
+            return currentMonthId * 2;
+        }
+    }
+
+    const [selectedSeasonItem, setSelectedSeasonItem] = useState(getCurrentSeason());
+
     const dispatch = useDispatch();
     const [Filters, setFilters] = useState([]);
     const [searchText, setSearchText] = useState('');
 
     const handleSeasonChange = (event) => {
         const selectedValue = event.target.value;
+        setSelectedSeasonItem(selectedValue);
         dispatch(setSelectedSeason(selectedValue));
     };
 
@@ -36,6 +50,8 @@ const ProductMenu = (props) => {
         dispatch(getSeasons());
     }, [dispatch]);
 
+
+
     return (
         <>
             <div className="row py-2">
@@ -48,19 +64,21 @@ const ProductMenu = (props) => {
                     <select
                         className="form-select"
                         aria-label="Default select example"
-                        value={selectedSeason}
+                        value={selectedSeasonItem || "1"}
                         onChange={handleSeasonChange}
                     >
                         <option value="" disabled>Choose a Season</option>
+                        <option value="-1">All Season</option>
                         {seasons && seasons.map((season) => (
                             season.IsActive ? (
-                                <option key={season.id} value={season.seasonId}>
+                                <option key={season.SeasonId} value={season.SeasonId}>
                                     {season.Name}
                                 </option>
                             ) : null
                         ))}
                     </select>
                 </div>
+
                 <div className="col-md-2 mb-1">
                     <Typeahead parentCallback={handleCallback} />
                 </div>
