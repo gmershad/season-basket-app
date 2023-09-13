@@ -16,7 +16,7 @@ class ProductView extends Component {
     }
 
     componentDidMount() {
-        this.props.getCatalog(1, 30, -1)
+        this.props.getCatalog(1, 30, this.props.selectedSeason)
             .then(() => {
                 this.setState({ products: this.props.catalog });
             })
@@ -76,8 +76,7 @@ class ProductView extends Component {
     }
 
     handleCallback = (data) => {
-        this.props.getCatalog(data.currentPage, data.postPerPage, -1);
-        this.props.getCatalog(data.currentPage, data.postPerPage, -1)
+        this.props.getCatalog(data.currentPage, data.postPerPage, this.props.selectedSeason)
             .then(() => {
                 this.setState({ products: this.props.catalog });
             })
