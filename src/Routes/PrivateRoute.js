@@ -19,43 +19,43 @@ const MainRoutes = [{
             element: <ProductContainer />
         },
         {
-            path: '/',
-            children: [
-                {
-                    path: "product/:id",
-                    element: <ProductDetailContainer />
-                }
-            ]
-        },
-        {
-            path: '/nutrition',
-            element: <NutritionContainer />
-        },
-        {
-            path: '/diseasenutrition',
-            element: <DiseaseNutritionContainer />
-        },
-        {
-            path: '/uricacid',
-            element: <UricAcidContainer />
-        },
-        {
-            path: '/ayurfood',
-            element: <AyurvedicFoodContainer />
-        },
-        {
-            path: '/toxin',
-            element: <AntiNutrientsContainer />
-        },
-        {
-            path: '/cart',
-            element: <CartContainer />
-        },
-        {
-            path: '/wish',
-            element: <WishListContainer />
-        },
-    ]
-}];
+            path: "/product/:id",
+            element: <ProductDetailContainer />
+        }
+        // {
+        //     path: '/nutrition',
+        //     element: <NutritionContainer />
+        // },
+        // {
+        //     path: '/diseasenutrition',
+        //     element: <DiseaseNutritionContainer />
+        // },
+        // {
+        //     path: '/uricacid',
+        //     element: <UricAcidContainer />
+        // },
+        // {
+        //     path: '/ayurfood',
+        //     element: <AyurvedicFoodContainer />
+        // },
+        // {
+        //     path: '/toxin',
+        //     element: <AntiNutrientsContainer />
+        // },
+        // {
+        //     path: '/cart',
+        //     element: <CartContainer />
+        // },
+        // {
+        //     path: '/wish',
+        //     element: <WishListContainer />
+        // },
+    ],
+},
+    // {
+    //     path: "/product/:id",
+    //     element: <ProductDetailContainer />
+    // }
+];
 
 export default MainRoutes;

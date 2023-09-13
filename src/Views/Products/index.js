@@ -116,7 +116,7 @@ class ProductView extends Component {
                                                 <i className="fa fa-heart" aria-hidden="true"
                                                     onClick={() => this.addToWishList(productItem)} />
                                             </a>
-                                            <Link to={`/product/${productItem.ProductId}`}
+                                            <Link to={`/home/product/${productItem.ProductId}`}
                                                 style={{ textDecoration: 'none' }}>
                                                 <figure>
                                                     {
