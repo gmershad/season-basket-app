@@ -137,14 +137,14 @@ const Header = (props) => {
                             </a>
                         </li>
                         <li>
-                            <Link to={`/wish`} style={{ textDecoration: 'none' }}>
+                            <Link to={`/home/wish`} style={{ textDecoration: 'none' }}>
                                 <span href="#" className="rounded-circle bg-light p-2 mx-1">
                                     <i className="fa fa-heart" data-feather="log-in"></i>
                                 </span>
                             </Link>
                         </li>
                         <li>
-                            <Link to={`/cart`} style={{ textDecoration: 'none' }}>
+                            <Link to={`/home/cart`} style={{ textDecoration: 'none' }}>
                                 <span href="#" className="rounded-circle bg-light p-2 mx-1"
                                     style={{ position: 'relative' }}>
 
