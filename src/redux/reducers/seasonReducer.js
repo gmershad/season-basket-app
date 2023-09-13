@@ -6,7 +6,7 @@ import {
 } from '../actions/seasonActions';
 
 const initialState = {
-    selectedSeason: '',
+    selectedSeason: -1,
     seasons: null
 };
 
